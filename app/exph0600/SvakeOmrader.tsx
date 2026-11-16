@@ -28,7 +28,7 @@ export default function SvakeOmrader({ titler }: { titler: Record<string, string
           Ingen kapitler under 70 % etter {besvart} besvarte quizspørsmål. Bra!
         </p>
       ) : (
-        <ul className="divide-y divide-zinc-200 rounded-xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+        <ul className="divide-y divide-zinc-200 overflow-hidden rounded-xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
           {svake.map(([slug, s]) => (
             <li key={slug}>
               <Link

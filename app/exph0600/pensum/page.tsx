@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { deler, kapitler } from "@/content/exph0600/kapitler";
 
@@ -8,8 +9,9 @@ export default function Pensum() {
   return (
     <div className="space-y-10">
       <section className="space-y-2">
-        <Link href="/exph0600" className="text-sm text-zinc-500 hover:underline">
-          ← EXPH0600
+        <Link href="/exph0600" className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:underline">
+          <ChevronLeft className="size-4" aria-hidden />
+          EXPH0600
         </Link>
         <h1 className="text-3xl font-semibold tracking-tight">Pensum</h1>
         <p className="text-zinc-600 dark:text-zinc-400">
@@ -25,7 +27,7 @@ export default function Pensum() {
             </h2>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">{d.intro}</p>
           </div>
-          <ul className="divide-y divide-zinc-200 rounded-xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+          <ul className="divide-y divide-zinc-200 overflow-hidden rounded-xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
             {kapitler
               .filter((k) => k.del === d.nr)
               .map((k) => (

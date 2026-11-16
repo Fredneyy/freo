@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { deler, finnKapittel, kapitler } from "@/content/exph0600/kapitler";
@@ -28,8 +29,9 @@ export default async function KapittelSide({ params }: PageProps<"/exph0600/pens
   return (
     <article className="space-y-10">
       <header className="space-y-2">
-        <Link href="/exph0600/pensum" className="text-sm text-zinc-500 hover:underline">
-          ← Pensum · Del {del.nr}: {del.tittel}
+        <Link href="/exph0600/pensum" className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:underline">
+          <ChevronLeft className="size-4" aria-hidden />
+          Pensum · Del {del.nr}: {del.tittel}
         </Link>
         <h1 className="text-3xl font-semibold tracking-tight">{k.tittel}</h1>
         <p className="text-sm text-zinc-500">
@@ -89,15 +91,17 @@ export default async function KapittelSide({ params }: PageProps<"/exph0600/pens
 
       <nav className="flex justify-between gap-4 border-t border-zinc-200 pt-6 text-sm dark:border-zinc-800">
         {forrige ? (
-          <Link href={`/exph0600/pensum/${forrige.slug}`} className="hover:underline">
-            ← {forrige.tittel}
+          <Link href={`/exph0600/pensum/${forrige.slug}`} className="inline-flex items-center gap-1 hover:underline">
+            <ChevronLeft className="size-4 shrink-0" aria-hidden />
+            {forrige.tittel}
           </Link>
         ) : (
           <span />
         )}
         {neste && (
-          <Link href={`/exph0600/pensum/${neste.slug}`} className="text-right hover:underline">
-            {neste.tittel} →
+          <Link href={`/exph0600/pensum/${neste.slug}`} className="inline-flex items-center gap-1 text-right hover:underline">
+            {neste.tittel}
+            <ChevronRight className="size-4 shrink-0" aria-hidden />
           </Link>
         )}
       </nav>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { finnKapittel, kapitler } from "@/content/exph0600/kapitler";
 import { caser, kortsvar } from "@/content/exph0600/ovelser";
@@ -17,8 +18,9 @@ export default function ProveeksamenSide() {
   return (
     <div className="space-y-8">
       <header className="space-y-2">
-        <Link href="/exph0600" className="text-sm text-zinc-500 hover:underline">
-          ← EXPH0600
+        <Link href="/exph0600" className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:underline">
+          <ChevronLeft className="size-4" aria-hidden />
+          EXPH0600
         </Link>
         <h1 className="text-3xl font-semibold tracking-tight">Prøveeksamen</h1>
         <p className="text-zinc-600 dark:text-zinc-400">
