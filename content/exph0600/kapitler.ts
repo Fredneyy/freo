@@ -72,11 +72,19 @@ export const kapitler: Kapittel[] = [
       ],
       [
         "Personargument",
-        "Påstand som skal redusere troverdigheten til en person eller gruppe ved å gi dem negative karakteristikker. Bryter kravet om relevans. Ofte usaklig, men kompetanse, habilitet og interesser kan noen ganger være relevante.",
+        "Argument som skal redusere troverdigheten til en person eller gruppe ved å gi dem negative karakteristikker, også ved å mistenkeliggjøre motiver (Siv Jensen: «Er Lysbakken verdensmester i misunnelse?»). Usaklig når det ikke er relevant: bryter norm 3 (relevans) og norm 1 (grunner). Saklig når standpunktet handler om personen, eller når vi vurderer om en kilde er pålitelig (ekspertise).",
       ],
       [
         "Stråmann",
-        "Å argumentere mot en karikert, mindre rimelig eller mer kontroversiell versjon av motpartens syn. Bryter både kravet om riktighet og relevans, og kan aldri være relevant.",
+        "En gjengivelse av motpartens syn som mindre rimelig eller mer kontroversiell enn det er (cannabis → «fri flyt av narkotika»; Solberg: kritikerne vil la «terroristen vinne»). Skaper skinnuenighet og avsporer. Bryter alle tre normene: feilinformerer (riktighet), argumentene treffer bare stråmannen (relevans), og gir ingen grunn i den reelle saken.",
+      ],
+      [
+        "Bullshit (Frankfurt)",
+        "Å være likegyldig til om det man sier er riktig eller relevant. Verre enn løgn: løgneren utnytter normene, bullshit undergraver dem.",
+      ],
+      [
+        "Motivert resonnering",
+        "Vi lar oss lettere overbevise av argumenter for det vi ønsker skal være sant (arving om arveavgift, student om studielån).",
       ],
       ["Logisk funksjon", "Argumentets evne til å faktisk støtte eller svekke en påstand (gi grunner)."],
       ["Retorisk funksjon", "Argumentets evne til å overbevise eller overtale, uavhengig av om det gir gode grunner."],
@@ -95,12 +103,13 @@ export const kapitler: Kapittel[] = [
       {
         navn: "Hvorfor offentlig debatt?",
         tekst:
-          "Mill: debatt er et kunnskapssøkende samarbeid der feil kan avsløres. Habermas: fri, offentlig debatt er en forutsetning for at politiske beslutninger er legitime.",
+          "Mill: debatt er et kunnskapssøkende samarbeid; oppfatninger uten argumentasjon er en form for overtro. Habermas: en åpen, konsensussøkende debatt er en forutsetning for at politiske beslutninger er legitime. Den må være åpen for alle, behandle deltakerne som likeverdige og foregå gjennom rasjonell, saklig argumentasjon. Akademisk debatt er en del av offentligheten, med strengere krav til evidens og begrunnelse.",
       },
     ],
     eksamen: [
       "Forklar forskjellen på et arguments riktighet og relevans, og gi et eksempel.",
-      "Hva er en stråmann? Hvorfor kan stråmannsargumenter aldri være relevante?",
+      "Hva er en stråmann, og hvilke debattnormer bryter stråmannsargumentasjon?",
+      "Hva mener Frankfurt med bullshit, og hvorfor er det verre enn løgn?",
       "Når kan det være legitimt å vise til personen bak et argument?",
       "Forklar forskjellen på argumenters logiske og retoriske funksjon.",
     ],
@@ -128,7 +137,15 @@ export const kapitler: Kapittel[] = [
       ["Argumentasjonskjede", "En rekke argumenter der hvert støtter det neste opp mot standpunktet."],
       [
         "Sammensatt argument",
-        "To eller flere påstander som bare sammen gir én grunn for standpunktet (indre logisk sammenheng). Eks.: «Statsbudsjettet øker ikke studiestøtten» + «Uten høyere støtte vil frafallet øke».",
+        "To eller flere påstander som bare sammen gir én grunn for standpunktet (indre logisk sammenheng). Eks.: «Statsbudsjettet øker ikke studiestøtten» + «Uten høyere støtte vil frafallet øke». Test: blir den ene irrelevant hvis den andre er usann? Da er de sammensatt. Et motargument mot én del svekker hele argumentet.",
+      ],
+      [
+        "Motargument mot riktighet vs. relevans",
+        "Mot riktighet: påstanden stemmer ikke (pil mot påstanden). Mot relevans: påstanden kan stemme, men taler ikke for standpunktet (pil mot forbindelsen). Motargumenter kan selv møtes av motargumenter.",
+      ],
+      [
+        "Pro aut contra / pro et contra",
+        "Pro aut contra: argumentasjon for eller mot (forsvarsadvokat, politiker). Pro et contra: både for og mot, for å vurdere saken (utredninger, akademia).",
       ],
       [
         "Implisitt påstand",
@@ -145,14 +162,23 @@ export const kapitler: Kapittel[] = [
       ["Motargument", "Argument som svekker standpunktet eller et annet argument."],
       [
         "Språkavklaring / ekvivokering",
-        "Flertydige ord må presiseres. Ekvivokering er en feil der et ord skifter betydning underveis (f.eks. «teori», «frihet», «ulikhet»).",
+        "Flertydige ord må presiseres ut fra konteksten («økonomisk ulikhet»: inntekt eller formue?). Ekvivokering er en feil der et ord skifter betydning underveis: «Evolusjonsteorien er en teori» + «Man skal aldri stole på en teori» bruker «teori» i to betydninger.",
+      ],
+      [
+        "Fagspråk",
+        "Uttrykk med faglig definisjon må forstås slik: «fedme» = KMI ≥ 30 (FHI); Singers «person» = rasjonelt, selvbevisst vesen.",
       ],
     ],
     teorier: [
       {
         navn: "Fremgangsmåte for å finne argumenter",
         tekst:
-          "1) Finn steder som gir grunner (se etter «fordi», «derfor», «ettersom»). 2) Omformuler uklare påstander presist. 3) Bryt opp setninger som inneholder flere påstander. 4) Avgjør hvilken påstand hvert argument gir grunn for.",
+          "1) Finn steder som gir grunner (se etter «fordi», «derfor», «ettersom»). 2) Omformuler uklare påstander presist. 3) Bryt opp setninger som inneholder flere påstander. 4) Avgjør hvilken påstand hvert argument gir grunn for. Rekkefølge og setningsstruktur sier lite om argumentasjonsstrukturen, og også dårlige argumenter skal med.",
+      },
+      {
+        navn: "Finne standpunktet",
+        tekst:
+          "Standpunktet er hovedpåstanden, typisk noe som er omstridt. Formuler det som én deklarativ setning med egne ord, med dekning i teksten («Studentrabatten må endres» → «Studentrabatten på kollektivtransport bør også gjelde studenter over 30»). Ikke bruk overskriften, som ofte er skrevet av redaksjonen. Tolker du for fritt, risikerer du en stråmann.",
       },
       {
         navn: "Fordekt standpunkt",
@@ -372,57 +398,70 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 6",
     forelesning: [8],
     kjerne:
-      "Popper foreslo falsifiserbarhet som demarkasjonskriterium: en teori er vitenskapelig bare hvis det er mulig å vise at den er feil. Vitenskapen går fremover ved å forsøke å falsifisere teorier og beholde de som tåler det. Quine–Duhem-problemet viser at dette er for enkelt, fordi hypoteser aldri testes alene.",
+      "Popper foreslo falsifiserbarhet som demarkasjonskriterium: en påstand er vitenskapelig bare hvis det er mulig å vise at den er usann, dersom den er usann. Pseudovitenskap er ofte for vag til å testes, eller beskyttes med ad hoc-hypoteser. Popper mente også at vitenskapen ikke trenger induksjon (Humes problem): hypoteser blir aldri bekreftet, bare falsifisert eller korroborert. Innvendingene er at vi faktisk trenger bekreftede teorier, og Quine–Duhem: hypoteser testes aldri alene.",
     begreper: [
-      ["Demarkasjonskriterium", "Et kriterium som skiller vitenskap fra ikke-vitenskap/pseudovitenskap."],
-      [
-        "Falsifiserbar",
-        "Det må være mulig å vise at påstanden er usann, dersom den er usann. Den må forby noe observerbart.",
-      ],
-      [
-        "Falsifikasjonisme",
-        "Poppers syn: vitenskap kan ikke bekrefte hypoteser, bare falsifisere dem. Gode teorier tåler gjentatte forsøk på falsifisering.",
-      ],
       [
         "Pseudovitenskap",
-        "Noe som forsøker å fremstå som vitenskap uten å oppfylle kravene til evidens og testing.",
+        "Teorier, metoder eller systemer som forsøkes legitimert ved å fremstå som vitenskapelige, uten å oppfylle standardene for evidens og testing. Typisk: vage påstander, anekdoter, tvilsomme tidsskrifter, opprop fra «eksperter».",
+      ],
+      ["Demarkasjonskriterium", "Et kriterium som skiller vitenskap fra ikke-vitenskap. Popper: falsifiserbarhet."],
+      [
+        "Falsifiserbar",
+        "Det er mulig å vise at påstanden er usann, dersom den er usann. Trenger ikke være lett (Big Bang). Goops klistremerker som «rebalanserer kroppens energifrekvens» kan ikke testes; påstanden om «NASA-materiale» kunne det, og måtte dementeres.",
       ],
       [
         "Ad hoc-hypotese",
-        "Tilleggshypotese som innføres bare for å redde en teori fra falsifisering, uten uavhengig støtte. Eks.: «Studiene finner ikke effekt fordi metodene ikke kan måle livsenergien.»",
+        "Hypotese som innføres for å redde en teori fra falsifisering, uten uavhengig støtte. Flatjordtilhengere forklarer bort horisont og satellittbilder som lysrefleksjon og konspirasjon, og gjør dermed en falsifiserbar påstand ufalsifiserbar i praksis.",
+      ],
+      [
+        "Induksjonsproblemet (Hume)",
+        "Ikke at induksjon er usikker, men at vi mangler et prinsipielt skille mellom gode og dårlige induktive slutninger: hvorfor støtter metaller som utvider seg en generalisering, mens bussreisende født på primtallsdager ikke gjør det?",
+      ],
+      [
+        "Falsifikasjonisme",
+        "Poppers syn: vitenskapen kan ikke og bør ikke bekrefte hypoteser, bare forsøke å falsifisere dem. Den største trusselen er dogmatisme.",
+      ],
+      [
+        "Korroborert",
+        "En svært falsifiserbar hypotese som har overlevd strenge tester («severe tests»). Ikke bekreftet, bare foreløpig uten rimelige alternativer.",
+      ],
+      [
+        "0-hypotese",
+        "Man tester ofte en nullhypotese («fuglene leter vilkårlig») og falsifiserer den. Det bekrefter ikke at fuglene husker; de kan lukte maten, så alternativene må også utelukkes.",
       ],
       [
         "Quine–Duhem-tesen",
-        "Hypoteser testes aldri isolert. Det er alltid hjelpehypoteser i spill (instrumentene virker, bakgrunnsteori stemmer), så en mislykket prediksjon sier ikke hvilken antakelse som er feil.",
+        "Hypoteser testes aldri isolert. Prediksjonen har formen «hvis h (og h1, h2, h3 …), så e», der hjelpehypotesene gjelder instrumenter og bakgrunnsteori. Slår e feil, vet vi bare at minst én er gal.",
       ],
-      ["Hjelpehypotese", "Antakelse man må forutsette for å gjennomføre en test, men som ikke er det man tester."],
     ],
     teorier: [
       {
-        navn: "Falsifikasjonismen",
+        navn: "Psykoanalysen vs. relativitetsteorien",
         tekst:
-          "Motivasjon: induksjon kan ikke bevise noe, men modus tollens kan avkrefte. Fremskritt = dristige hypoteser som overlever forsøk på falsifisering.",
-        for: [
-          "Fanger at vitenskap er åpen for kritikk, mens dogmatiske systemer ikke er det.",
-          "Gir et tydelig kriterium mot pseudovitenskap.",
-        ],
-        mot: [
-          "Quine–Duhem: én negativ observasjon kan skyldes instrumenter eller hjelpehypoteser.",
-          "Forskere forkaster sjelden teorier ved første avvik; fremskritt skjer oftere ved revisjon.",
-          "Vi bruker faktisk teorier fordi de er godt bekreftet, ikke bare «ikke-falsifisert».",
-        ],
+          "Popper: psykoanalysen kan forklare både den som dytter et barn i vannet og den som redder det. En teori som passer med alt, forutsier ingenting og forklarer egentlig ingenting; den er en «primitiv myte». Relativitetsteorien tok en risiko: den predikerte at gravitasjon bøyer lys, og hadde Eddingtons måling i 1919 vist noe annet, ville den vært falsifisert.",
       },
       {
-        navn: "Poppers svar",
+        navn: "Poppers bilde av fremskritt",
         tekst:
-          "Falsifikasjonisme er først og fremst en normativ holdning: formuler teorier slik at de kan testes, og vær villig til å endre syn i møte med motstridende data.",
+          "Formodninger fremsettes og forsøkes falsifisert. De som faller, erstattes; de som overlever, skal ta stadig større sjanser. Som naturlig utvalg: hypoteser som ikke fungerer, elimineres. Vi trenger bare deduksjon (modus tollens), ikke induksjon.",
+      },
+      {
+        navn: "Innvendinger",
+        tekst: "",
+        mot: [
+          "Neptun: Uranus' bane stemte ikke med Newton. Adams og Le Verrier postulerte en ny planet uten uavhengig grunn, altså ad hoc, og fikk rett. Forskere forkaster sjelden teorier ved første avvik, og det er rimelig.",
+          "Vi trenger bekreftede teorier: skal du bygge en bro, er en grundig testet teori bedre enn en naboen kom på i går, men for Popper er begge bare «ikke-falsifisert».",
+          "Quine–Duhem: man kan alltid skylde på hjelpehypotesene. Popper gir ikke noe rasjonelt kriterium for hvilken hypotese som skal forkastes. I naturfagstimen og ved Gran Sasso skyldte man med rette på instrumentene fordi teorien var godt bekreftet, men den begrunnelsen kan ikke Popper bruke.",
+        ],
       },
     ],
     eksamen: [
-      "Hva menes med at en teori er falsifiserbar?",
-      "Hva er en ad hoc-hypotese? Gi et eksempel.",
-      "Gjør rede for Quine–Duhem-problemet og hvilken utfordring det gir falsifikasjonismen.",
-      "Hvordan kan vi skille vitenskap fra pseudovitenskap?",
+      "Hva menes med at en teori er falsifiserbar? Gi et eksempel på en påstand som ikke er det.",
+      "Hva er en ad hoc-hypotese, og hvordan kan den gjøre en teori pseudovitenskapelig?",
+      "Hvorfor mente Popper at psykoanalysen er pseudovitenskap?",
+      "Hva er induksjonsproblemet, og hva er Poppers svar?",
+      "Gjør rede for Quine–Duhem-tesen og hvilken utfordring den gir falsifikasjonismen.",
+      "Er falsifiserbarhet et godt demarkasjonskriterium? Drøft.",
     ],
   },
   {
@@ -580,56 +619,81 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 9",
     forelesning: [9, 10],
     kjerne:
-      "Kuhn mente at vitenskap foregår innenfor paradigmer. Normalvitenskap løser oppgaver innenfor rammene til anomalier hoper seg opp, det oppstår krise, og en revolusjon fører til et nytt paradigme. Observasjoner er teoriavhengige, og paradigmer kan være inkommensurable. Det reiser spørsmål om fremskritt og relativisme.",
+      "HD-metoden sier ingenting om oppdagelseskonteksten: rammeverket vi trenger for å formulere mulige svar. Kuhn kalte slike rammeverk paradigmer. Normalvitenskap løser oppgaver innenfor et paradigme; når anomaliene hoper seg opp, kommer krise og revolusjon. Observasjoner er teoriavhengige, og paradigmer kan være delvis inkommensurable. Det betyr likevel ikke relativisme: observasjoner kan avgjøre mellom teorier, og virkeligheten er en paradigmenøytral standard (kart og terreng).",
     begreper: [
       [
-        "Paradigme",
-        "Rammeverket som organiserer forskningen i en disiplin: begrepsapparat, verdier/normer, teoretiske forutsetninger og mønstereksempler.",
+        "Paradigme (faglig matrise)",
+        "Rammeverket som organiserer forskningen i en disiplin: 1) verdier (gode metoder, hva som er interessant), 2) teoretiske forutsetninger, 3) begrepsapparat, 4) modeller og mønstereksempler.",
       ],
-      ["Normalvitenskap", "Puslespillløsning innenfor et paradigme som ikke selv utfordres."],
-      ["Anomali", "Observasjon som ikke passer inn i paradigmet (f.eks. Merkurs bane for Newtons fysikk)."],
-      ["Vitenskapelig revolusjon", "Paradigmeskifte: det gamle rammeverket erstattes (Newton → Einstein)."],
-      ["Mønstereksempel", "Standardløsninger studenter lærer, som viser hvordan faget skal drives."],
+      [
+        "Normalvitenskap",
+        "Problemløsning innenfor et paradigme som ikke selv utfordres. Krever konsensus: du kan ikke forske på DNA-struktur og samtidig lure på om gener finnes. Poppers bilde blir for enkelt.",
+      ],
+      ["Anomali", "Resultat som ikke passer i paradigmet. Skyldes gjerne feil i utførelsen eller legges til side, men mange nok gir krise."],
+      ["Paradigmeskifte (revolusjon)", "Rammeverket rekonfigureres: nye begreper, spørsmål, metoder og standarder (geosentrisk → heliosentrisk, Newton → Einstein)."],
       [
         "Observasjoners teoriavhengighet",
-        "Hva vi observerer og hvordan vi tolker det, avhenger av bakgrunnsteori.",
+        "Data må tolkes i lys av teori (sporene i et tåkekammer, vikingredskaper). Kuhn: paradigmets mønstereksempler avgjør hvordan vi ser fenomenene. Å lære et fag er å lære å se.",
       ],
       [
         "Inkommensurabilitet",
-        "To paradigmer mangler felles, nøytralt sammenligningsgrunnlag.",
+        "To paradigmer har ikke noe nøytralt sammenligningsgrunnlag. «Masse» betyr ikke helt det samme for Newton og Einstein.",
       ],
       [
         "Relativisme (vitenskapelig)",
-        "Hva som er korrekt avhenger av paradigme/gruppe; ingen nøytral standard.",
+        "Hva som er korrekt (ikke bare hva folk tror), avhenger av paradigmet. Folk i middelalderen hadde da rett i at sola gikk rundt jorda. Kuhn avviste selv dette.",
       ],
-      ["Realisme", "Det finnes en virkelighet uavhengig av oss, og vitenskapen fanger (delvis) opp den."],
+      [
+        "Realisme (vitenskapelig)",
+        "Virkeligheten finnes noenlunde uavhengig av oss og avgjør om teoriene er korrekte. Ikke at vi kan se den «objektivt» uten bias; det er en stråmann.",
+      ],
       [
         "Konstruktivisme",
-        "Fakta er (også) resultat av sosiale prosesser og rammeverk (Latour og Woolgar: Laboratory Life; Foucault om galskap). Betyr ikke at virkeligheten er konstruert, men at kunnskapen om den er menneskelig arbeid.",
+        "Fakta er skapt av sosiale prosesser og rammeverket vi jobber under. Latour og Woolgar (Laboratory Life) kan leses som at konsensus ga hormonet TRF sin struktur.",
+      ],
+      [
+        "Galileo gambit",
+        "«De forkastet Galileo, og han fikk rett. De forkaster meg, altså er jeg som Galileo.» Svikter fordi nesten alle som bryter med konsensus, tar feil.",
       ],
     ],
     teorier: [
       {
         navn: "Kuhns syklus",
-        tekst:
-          "Paradigme → normalvitenskap → anomalier → krise → revolusjon → nytt paradigme → normalvitenskap.",
+        tekst: "Paradigme → normalvitenskap → anomalier → krise → revolusjon → nytt paradigme → normalvitenskap.",
       },
       {
-        navn: "Popper vs. Kuhn",
+        navn: "Kan vi sammenligne på tvers av paradigmer?",
         tekst:
-          "Popper: teorier forkastes når de falsifiseres; gradvis fremskritt; vitenskap er rasjonell og universell. Kuhn: teorier forsvares lenge innenfor paradigmet til anomaliene tvinger frem et skifte; fremskritt skjer gjennom revolusjoner; vitenskap er historisk og perspektivavhengig.",
+          "Tilhengere av det geo- og heliosentriske verdensbildet argumenterte faktisk mot hverandre. Observasjoner trenger ikke være helt teorinøytrale, bare noe begge sider kan enes om: Newton og Einstein er enige om hvor Merkur er på himmelen, men teoriene predikerer ulikt. Teoriavhengighet betyr ikke at observasjoner er bestemt av teori; vi observerer stadig noe annet enn vi forventet.",
       },
       {
-        navn: "Fører Kuhn til relativisme?",
+        navn: "Vitenskapshistorien er mer kompleks enn Kuhns modell",
         tekst:
-          "Ikke nødvendigvis. At vitenskap er sosialt formet, betyr ikke at den er vilkårlig. Nye teorier forklarer mer, passer bedre med observasjoner og åpner nye spørsmål. Kart-og-terreng: vi tegner stadig bedre kart. Vitenskapens styrke er at den er selvkorrigerende.",
+          "Evolusjonsteorien og platetektonikken erstattet ikke noe paradigme, og DNA-oppdagelsen kom uten krise. Galison: teorier, metoder og begreper endres ikke samtidig. Nersessian: forskere justerer stadig antakelser og rammer. Lakatos: ofte flere konkurrerende forskningsprogrammer samtidig.",
+      },
+      {
+        navn: "Sosiale prosesser og underdogmyten",
+        tekst:
+          "Vitenskap har en sosial dynamikk (IPCC-rapportene er forhandlet frem), men teorier vinner sjelden uten evidens: relativitetsteorien fikk konsensus etter bekreftelse. Wegener ble tatt på alvor, men manglet en mekanisme for kontinentaldriften frem til platetektonikken. Nye ideer bør møtes med skepsis, og konsensus fortjener normalt autoritet, ikke mistenkeliggjøring.",
+      },
+      {
+        navn: "Realisme vs. relativisme: kart og terreng",
+        tekst:
+          "Vi tegner kartene (teorier, måleenheter, kategorier), men terrenget er uavhengig av oss: uansett paradigme blir ikke hvit fluesopp spiselig. Realismen krever ydmykhet, fordi vi alltid kan ta feil. Relativismen gjør feil umulig og er derfor en form for dogmatisme; da er det heller ingen grunn til å lytte til marginaliserte grupper (Harding).",
+      },
+      {
+        navn: "Hva er sosialt konstruert?",
+        tekst:
+          "Vi konstruerer teorier om atomer, ikke atomer, men teoriene har en virkningshistorie. I samfunnsvitenskap og humaniora kan fenomenene selv være konstruert (penger, demokrati) eller påvirkes av kategoriene (Foucault om galskap, interaktive slag). Hacking: skill likevel fenomenet fra teorien om det. Det er forståelsen av kvinnelige flyktninger som er sosialt konstruert, ikke flyktningene.",
       },
     ],
     eksamen: [
       "Forklar forskjellen på paradigme og normalvitenskap.",
-      "Hva betyr det at observasjoner er teoriavhengige?",
+      "Hva betyr det at observasjoner er teoriavhengige? Gjør det umulig å sammenligne teorier?",
       "Sammenlign Poppers og Kuhns syn på vitenskapelig fremskritt.",
-      "Leder Kuhns teori til relativisme? Drøft.",
+      "Hva er inkommensurabilitet?",
+      "Leder Kuhns teori til relativisme? Bruk skillet mellom kart og terreng.",
+      "Hva er Galileo gambit, og hvorfor er det et dårlig argument?",
     ],
   },
   {
@@ -770,85 +834,117 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 12",
     forelesning: [6, 7],
     kjerne:
-      "Kapitlet handler om fri vilje og kropp–sinn-problemet: hvordan henger det mentale sammen med det fysiske? Hovedsvarene er substansdualisme (Descartes), fysikalisme/identitetsteori, funksjonalisme, og kroppsliggjorte tilnærminger (enaktivisme, fenomenologi, feministiske perspektiver).",
+      "Kapitlet handler om fri vilje og kropp/sinn-problemet: er sinnet noe fysisk, hvor går sinnets grenser, og hvordan preger sosial kontekst erfaringen? Svarene som drøftes, er substansdualisme (Descartes), fysikalisme og identitetsteori, funksjonalisme (med utvidet og kunstig sinn), kunnskapsargumentet og det vanskelige bevissthetsproblemet, og til slutt kroppsliggjorte tilnærminger: enaktivisme, fenomenologi og feministiske perspektiver.",
     begreper: [
       [
         "Determinisme",
-        "Alle hendelser, også handlinger, er fullstendig bestemt av tidligere årsaker.",
+        "Alt som skjer, kan forklares med en spesifikk tidligere årsak (det mekanistiske natursynet). Truer tanken om fri vilje og dermed moralsk ansvar.",
       ],
       [
         "Kompatibilisme",
-        "Fri vilje og determinisme kan forenes: vi er frie når handlingen springer ut fra oss selv og ikke fra ytre tvang.",
+        "Fri vilje er forenlig med determinisme. Hobbes: frihet er å kunne gjøre det man ønsker uten at noe hindrer en. Ønskene selv er bestemt, så vi er frie omtrent som en møll som flyr mot lyset.",
       ],
-      ["Inkompatibilisme", "Fri vilje og determinisme kan ikke begge være sanne."],
-      ["Kropp–sinn-problemet", "Hvordan forholder det mentale seg til det fysiske, og hvordan kan de påvirke hverandre?"],
+      [
+        "Inkompatibilisme",
+        "Fri vilje krever at vi kunne gjort noe annet. Libertarianere: universet er ikke deterministisk, og vi har fri vilje. Harde determinister: universet er deterministisk, fri vilje er en illusjon, og vi er dypest sett ikke moralsk ansvarlige.",
+      ],
+      ["Kropp/sinn-problemet", "Hvordan henger det mentale og det fysiske sammen, og hvordan kan de påvirke hverandre?"],
       [
         "Substansdualisme",
-        "Descartes: to substanser, res extensa (utstrakt, fysisk) og res cogitans (tenkende). «Jeg tenker, altså er jeg.»",
+        "Descartes: kroppen er res extensa (utstrakt, fysisk), sinnet res cogitans (tenkende, ikke-utstrakt). Argument: jeg kan tvile på at jeg har en kropp (drøm, ond ånd), men ikke på at jeg tenker («jeg tenker, altså er jeg»). Derfor er de forskjellige substanser.",
       ],
       [
         "Interaksjonsproblemet",
-        "Elisabeth av Böhmen: hvis sinn og kropp er helt forskjellige substanser, hvordan kan de påvirke hverandre? (Descartes: konglekjertelen.)",
+        "Elisabeth av Böhmen: bare ting med utstrekning kan påvirke hverandre kausalt. Hvordan kan et ikke-utstrakt sinn da bevege kroppen? Hun forsvarte selv monisme: sinnet er også materielt.",
       ],
-      ["Fysikalisme", "Alt som finnes er fysisk, også sinnet."],
+      ["Fysikalisme", "Alt som finnes, er i bunn og grunn fysisk, også sinnet (Demokrit: «alt er atom og tomrom»)."],
       [
         "Identitetsteori",
-        "Mentale tilstander er identiske med nevrale tilstander i hjernen. Sinnet er det hjernen gjør (Churchland).",
+        "Mentale tilstander er identiske med nevrale tilstander, slik vann = H2O og morgenstjernen = kveldsstjernen (Venus). Smerte = C-fiberfyring (forenklet eksempel). Reduktiv fysikalisme. Churchland: «Sinnet er hva hjernen gjør»; støttes av lesjonsstudier.",
       ],
       [
         "Funksjonalisme",
-        "Mentale tilstander bestemmes av funksjonen de har i et system (årsak → atferd → andre tilstander), ikke av materialet. Sinn kan realiseres på ulike måter (hjerne = maskinvare, sinn = programvare).",
+        "En mental tilstand bestemmes av sin funksjonelle profil: hva som forårsaker den (input), hvilken atferd den gir (output) og forholdet til andre mentale tilstander. Forenlig med fysikalisme.",
       ],
       [
-        "Det vanskelige bevissthetsproblemet",
-        "Hvorfor og hvordan fysiske prosesser gir opphav til subjektiv opplevelse, hvordan det er å være noe (førstepersonsperspektivet).",
+        "Multippel realisering",
+        "Samme mentale tilstand kan realiseres av ulike fysiske prosesser: dyr, marsboere (Putnam), kanskje silisium. Avviser identitetsteoriens «nevrosjåvinisme».",
       ],
-      ["Enaktivisme", "Bevissthet skapes i kroppslig samspill og handling med omgivelsene, ikke bare inne i hodet."],
       [
-        "Fenomenologi",
-        "Husserl, Merleau-Ponty: starter i erfaringen slik den fremtrer; kroppen er vårt synspunkt på verden.",
+        "Utvidet sinn",
+        "Clark og Chalmers: deler av sinnet kan ligge utenfor kroppen. Otto (alzheimer) slår opp MoMAs adresse i notatboken, Inga husker den. Notatboken har samme funksjon og er del av Ottos sinn. Bygger på Haraways kyborg, en hybrid av maskin og organisme.",
+      ],
+      [
+        "Maskinfunksjonalisme",
+        "Sinnet er programvare, hjernen maskinvare; datamaskiner kan i prinsippet ha mentale tilstander. Turingtesten: kan en maskin i et imitasjonsspill lure en testperson til å tro at den er et menneske?",
+      ],
+      [
+        "Kunnskapsargumentet (Jackson)",
+        "1) Mary kjenner alle fysiske fakta om fargesyn. 2) Når hun ser rødt første gang, lærer hun noe nytt. 3) Altså er ikke alle fakta fysiske. Rammer fysikalisme, og også funksjonalisme.",
+      ],
+      [
+        "Første- og tredjepersonsperspektiv",
+        "Førsteperson: hvordan noe oppleves for meg. Tredjeperson: det ytre, observerbare perspektivet (hjerneprosesser, funksjon). Forklaringsgapet mellom dem er «det vanskelige bevissthetsproblemet» (Nagel, Chalmers).",
+      ],
+      [
+        "Kroppsliggjøring (embodiment)",
+        "Samlebetegnelse for teorier der kroppen, både som organisme og som opplevd, er vesentlig for sinn og bevissthet.",
       ],
     ],
     teorier: [
       {
         navn: "Substansdualisme",
-        tekst: "Sinnet er en ikke-fysisk substans.",
-        for: ["Fanger at tanker og opplevelser virker helt annerledes enn materie.", "Cogito: jeg kan tvile på kroppen, men ikke på at jeg tenker."],
-        mot: ["Interaksjonsproblemet (Elisabeth av Böhmen).", "Passer dårlig med nevrovitenskapen."],
+        tekst: "Sinnet er en ikke-fysisk, tenkende substans; kroppen er en del av det mekaniske universet.",
+        for: ["Fanger at tenkning virker helt annerledes enn materie.", "Cogito: jeg kan tvile på kroppen, men ikke på at jeg tenker."],
+        mot: ["Interaksjonsproblemet (Elisabeth av Böhmen), som Descartes aldri løste tilfredsstillende."],
       },
       {
-        navn: "Identitetsteori (fysikalisme)",
+        navn: "Identitetsteori",
         tekst: "Smerte er en bestemt hjerneprosess.",
-        for: ["Løser interaksjonsproblemet: det finnes bare én ting.", "Passer med naturvitenskapen."],
+        for: ["Løser interaksjonsproblemet: det er bare én ting, hjernen.", "Støttes av nevrovitenskap (lesjonsstudier)."],
         mot: [
-          "Nevroplastisitet: forholdet mellom hjerne og sinn er ikke 1:1, og påvirkningen går begge veier.",
-          "Mary-tankeeksperimentet: å vite alt fysisk om farger er ikke det samme som å oppleve rødt.",
-          "Utelukker at dyr/maskiner med annen «hardware» kan ha samme mentale tilstander.",
+          "Smerte skapes av hele det nociseptive systemet, ikke bare hjernen.",
+          "Hjerneaktiviteten for samme oppgave er ulik fra person til person.",
+          "Nevroplastisitet: ALS-pasienter med locked-in-syndrom kan kommunisere via BCI med andre nevroner. Samme mentale tilstand, ulik hjernetilstand.",
         ],
       },
       {
         navn: "Funksjonalisme",
-        tekst: "Det som gjør noe til et sinn er hva det gjør, ikke hva det er laget av.",
+        tekst: "Det som gjør noe til et sinn, er hva det gjør, ikke hva det er laget av.",
         for: [
-          "Åpner for at dyr, romvesener og kanskje maskiner kan ha sinn (multippel realiserbarhet).",
-          "Grunnlag for ideen om det utvidede sinn (Clark og Chalmers): notatbok/mobil som del av sinnet.",
+          "Multippel realisering: dyr og andre vesener kan ha mentale tilstander.",
+          "Åpner for utvidet sinn og kunstig intelligens.",
         ],
         mot: [
-          "Kinesisk rom (Searle): korrekt funksjon/atferd er ikke det samme som forståelse.",
-          "Fanger ikke den subjektive opplevelsen (det vanskelige problemet).",
+          "Det kinesiske rommet (Searle): å følge regler for kinesiske tegn (syntaks) er ikke å forstå kinesisk (semantikk). Sterk KI (ekte forståelse) er umulig; bare svak KI (verktøy). En simulert laktasjon gir ikke melk. Searle er selv fysikalist: forståelse krever riktig biologisk grunnlag.",
+          "Kunnskapsargumentet: funksjonell profil fanger ikke hvordan smerte føles.",
         ],
       },
       {
-        navn: "Kroppsliggjorte tilnærminger",
+        navn: "Enaktivisme (Hurley, O'Regan og Noë)",
         tekst:
-          "Fysikalismen er ikke feil, men ufullstendig. Bevissthet er kroppslig, situert og relasjonell. Feministiske perspektiver (Haraway, Young): kroppen er også sosial og kulturell, og erfaring er preget av posisjon, makt og relasjoner.",
+          "Sinnet skapes gjennom aktiv, kroppslig samhandling med omgivelsene. Å se krever at vi beveger øyne og hode; persepsjon og handling henger sammen. Subjektiv erfaring er «noe vi gjør»: praktisk, kroppslig kunnskap (vite hvordan, som å sykle), ikke enkeltstående bevissthetstilstander. Mary manglet denne kroppslige kunnskapen. Forenlig med fysikalisme, men i motsetning til funksjonalismen betyr det materielle grunnlaget noe. Brooks' roboter navigerer med kroppslige evner i stedet for ferdigprogrammerte kart. Kritikk: forsøker å lukke forklaringsgapet ved å gjøre førstepersonsperspektivet om til tredjeperson, og mister det på veien.",
+      },
+      {
+        navn: "Fenomenologi (Husserl, Merleau-Ponty)",
+        tekst:
+          "Subjektiv erfaring er en grunnleggende kunnskapskilde og kommer før vitenskapen, som er «bygd på verden som direkte erfart». Verken det mentale eller det fysiske har forrang; begge er sider av kroppen. Kropp/sinn-problemet blir et kropp/kropp-problem: kroppen som organisme (vanekroppen, med en bakgrunnsfølelse av «jeg kan») og kroppen slik den oppleves (nå-kroppen).",
+      },
+      {
+        navn: "Feministiske perspektiver",
+        tekst:
+          "McWeeny: fysikalismen antar feilaktig at sinnet er likt hos alle. Beauvoir: jenter utvikler en dobbel bevissthet, der de ser seg selv både som subjekt og som objekt for andres blikk. Young («Throwing like a Girl»): kvinners kroppslige «jeg kan» svekkes til «jeg kan ikke», på grunn av sosial objektivering, ikke biologi. Ahmed: å bryte med heteronormen gir en kroppslig følelse av å ikke passe inn.",
       },
     ],
     eksamen: [
-      "Hva er problemet med fri vilje? Forklar kompatibilisme.",
-      "Hva er substansdualisme? Gi et argument for og mot.",
-      "Forklar forskjellen på identitetsteori og funksjonalisme.",
-      "Hva hevder enaktivisme / kroppsliggjorte teorier om bevissthet?",
+      "Hva er problemet med fri vilje? Forklar kompatibilisme, libertarianisme og hard determinisme.",
+      "Hva er substansdualisme? Gjør rede for Descartes' argument og Elisabeth av Böhmens innvending.",
+      "Forklar identitetsteorien og en innvending mot den.",
+      "Hva er funksjonalisme og multippel realisering? Forklar Ottos notatbok.",
+      "Hva viser Searles kinesiske rom?",
+      "Gjør rede for kunnskapsargumentet (Mary) og det vanskelige bevissthetsproblemet.",
+      "Hva hevder enaktivismen og fenomenologien om kroppens rolle?",
+      "Hvordan kan sosial kontekst prege kroppslig erfaring ifølge Beauvoir og Young?",
     ],
   },
   {
@@ -960,72 +1056,87 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! intro del 4 + kap. 14",
     forelesning: [3],
     kjerne:
-      "Metaetikken spør hva moral er og om det finnes objektivt riktige svar. Hume hevdet at vi ikke kan slutte fra «er» til «bør». Nihilismen benekter at det finnes moralsk rett og galt; kulturrelativismen sier moral er relativ til kultur. Begge har alvorlige problemer, og de normative teoriene (utilitarisme, pliktetikk, dydsetikk) søker en allmenngyldig, rasjonell målestokk.",
+      "Etikk er del av yrkesutøvelse og samfunnsdebatt: fagkunnskap er ikke nok, og vi kan ikke fraskrive oss ansvar ved å «bare følge ordre». Metaetikken spør om det finnes objektivt riktige svar på moralske spørsmål. Humes lov sier at vi ikke kan slutte fra «er» til «bør». Nihilismen sier at moral er en illusjon; kulturrelativismen at moral er relativ til kultur. Begge har alvorlige problemer, og derfor søker de normative teoriene en allmenngyldig, rasjonell målestokk.",
     begreper: [
       [
+        "Deskriptive vs. normative utsagn",
+        "Deskriptive sier hvordan noe er («de fleste lyver ukentlig»), normative hva som bør være («du bør ikke lyve»). Hva folk flest mener (f.eks. om surrogati), avgjør ikke hva som er rett.",
+      ],
+      [
         "Normativ etikk",
-        "Spør hva vi bør gjøre, hvem vi bør være og hva som er verdifullt. Et skritt tilbake fra herskende moral.",
+        "Det systematiske studiet av hva som gjør noe moralsk riktig eller galt, rettferdig eller urettferdig: hvordan vi bør handle, hvem vi bør være, hva som er verdifullt.",
       ],
       [
         "Metaetikk",
-        "Spør om moralens natur og grunnlag: Finnes moralske fakta? Er moral bare følelser? Enda et skritt tilbake.",
+        "Undersøker moralens grunnlag og natur, f.eks. om etiske utsagn kan være sanne eller usanne. Tar ikke selv stilling til hva som er moralsk.",
       ],
       [
-        "Deskriptiv etikk",
-        "Beskriver hvilke normer folk faktisk har. Hva flertallet mener, avgjør ikke hva som er rett.",
-      ],
-      [
-        "Er/bør-skillet (Humes lov)",
-        "Vi kan ikke slutte til et normativt «bør» bare fra deskriptive «er»-påstander. Det trengs alltid en normativ premiss.",
+        "Er/bør-problemet (Humes lov)",
+        "Vi kan ikke slutte bare fra beskrivelser av hva som er, til hva som bør være. Vi kan se slagene i et overfall, men ikke at det er galt. Hare kalte det «Humes lov» («Humes giljotin»).",
       ],
       [
         "Naturalistisk feilslutning",
-        "(Moore) Å hevde at noe er godt fordi det har naturlige egenskaper (nytelse, etterstrebet). Brukes også om er→bør-slutninger og appell til det naturlige.",
+        "Hare: å vise til noe deskriptivt (at noe er nytelsesfullt eller etterstrebet) for å vise at det er godt. Brukes i dag om er→bør-slutninger generelt.",
+      ],
+      [
+        "Appell til det naturlige",
+        "At vi bør gjøre det som er naturlig. Like ugyldig om homofili er «unaturlig» eller «naturlig» (dyr gjør mye vi ikke bør etterligne), og om økologisk mat. Sosialdarwinismen er et historisk eksempel.",
       ],
       [
         "Moralsk nihilisme",
-        "Det finnes ikke noe moralsk rett og galt. Moralutsagn er verken sanne eller usanne, eller bare uttrykk for følelser (som smaksutsagn).",
+        "Det finnes ikke noe moralsk rett og galt. Varianter: moralutsagn kan verken være sanne eller usanne, alle er usanne (feilteori), eller de uttrykker bare følelser («Dødsstraff, bu!»), kalt ekspressivisme. Thrasymachos i Platons Staten.",
       ],
       [
         "Kulturrelativisme",
-        "Moralske normer er gyldige bare relativt til kulturen de tilhører; det finnes ingen kulturuavhengig standard. Moral er konvensjoner, som kjøreregler.",
+        "Normers gyldighet er relativ til kulturen. Moral er konvensjoner, som høyrekjøring. Trekker et normativt krav om toleranse: vi har ikke grunnlag for å kritisere andre kulturer.",
       ],
       [
         "Objektivisme",
-        "Det finnes allmenngyldige moralske standarder. Utilitarisme, pliktetikk og dydsetikk er alle objektivistiske.",
+        "Det finnes en allmenngyldig standard for moralsk bedømmelse. Utilitarisme, pliktetikk og dydsetikk er objektivistiske. (Religiøs begrunnelse er også objektivistisk, men vanskelig å begrunne rasjonelt.)",
       ],
     ],
     teorier: [
       {
-        navn: "Er/bør i praksis",
+        navn: "Er skillet mellom er og bør vanntett?",
         tekst:
-          "«Kvinner er i snitt fysisk svakere, derfor bør de ikke ha fysiske jobber» mangler en normativ premiss og er en ugyldig slutning. Philippa Foot utfordrer skillet: at mennesker trenger mot, er både et faktum om oss og en grunn til å være modig.",
+          "MacIntyre: en klokke som går feil og er for tung, er ingen god klokke. For ting med en funksjon følger vurderinger av beskrivelser. Foot: mot og andre dyder setter oss i stand til å leve godt, slik øyne og hender gjør. Pliktetikere viser til fornuftens krav, og utilitarister til at alle søker nytelse og unngår smerte. Bentham, Mill og Kant aksepterer skillet, men ikke som et absolutt brudd.",
       },
       {
         navn: "Nihilisme",
-        tekst: "Moralutsagn er som smaksutsagn («kaffe er bedre enn te»).",
+        tekst: "Moralutsagn er som smaksutsagn («kaffe er bedre enn te»). Uenighet blir da maktkamp: manipulasjon, propaganda, vold.",
         mot: [
-          "Moralske utsagn er ikke meningsløse; vi argumenterer om dem på en måte vi ikke gjør om smak.",
-          "Strider mot de fleste menneskers erfaring av at noe (f.eks. tortur for moro skyld) er galt.",
+          "Også det alvorligste blir smak: Taliban «likte» å skyte Malala, og ingen har rett.",
+          "Rasjonell diskusjon om moral blir umulig.",
+          "Selvundergravende: den som argumenterer for nihilisme, forutsetter normen om sannferdighet.",
         ],
       },
       {
         navn: "Kulturrelativisme",
-        tekst: "Kan virke tolerant og opplyst, siden kulturer har hatt ulike normer.",
-        for: ["Tar kulturelt mangfold på alvor.", "Advarer mot etnosentrisme."],
-        mot: [
-          "Argumentet er ugyldig: at kulturer er uenige, viser ikke at det ikke finnes et riktig svar (jf. uenighet om jord-/solsentrum).",
-          "Deskriptivt feil: noen normer finnes i alle kulturer.",
-          "Gjør moralsk fremskritt umulig (avskaffelse av slaveri blir bare «endring»).",
-          "Toleransekravet blir selvmotsigende: skal vi tolerere intolerante kulturer? Og toleranse er selv en universell norm.",
+        tekst: "Har empirisk grunnlag (normer varierer) og et prisverdig krav om toleranse.",
+        for: [
+          "Minner oss om at mange normer er tradisjon. Når vi tenker «æsj», bør vi spørre om reaksjonen har et rasjonelt grunnlag.",
+          "Vi ville hatt andre normer om vi var født et annet sted, og bør derfor undersøke om våre normer er gode.",
         ],
+        mot: [
+          "Uenighet viser ikke at ingen har rett: folk er uenige om vaksiner også, men vaksiner virker.",
+          "Gjør moralsk fremskritt umulig: kampen for kvinners stemmerett i 1888 ville vært umoralsk. Barn som ble slått, ble også slått «riktig».",
+          "Overdriver uenigheten: alle kulturer har felles grunnnormer (orden i trafikken, forbud mot vilkårlig drap, sannferdighet), og uenigheten gjelder unntakene.",
+          "Toleransekravet: skal vi tolerere intolerante kulturer? Hvem definerer kulturen (Malala)? Toleranse gir mer mening som en allmenngyldig norm.",
+        ],
+      },
+      {
+        navn: "Hva normative teorier bidrar med",
+        tekst:
+          "De gir en målestokk for å vurdere normene vi er vant til, og krever begrunnelse. Det er naivt å tro at våre normer er perfekte; fremtidige generasjoner vil trolig fordømme noe vi gjør i dag.",
       },
     ],
     eksamen: [
-      "Forklar forskjellen på normativ etikk og metaetikk.",
+      "Forklar forskjellen på deskriptive og normative utsagn, og på normativ etikk og metaetikk.",
       "Hva går er/bør-skillet ut på? Gi et eksempel på en ugyldig slutning fra er til bør.",
+      "Hva er appell til det naturlige, og hvorfor er det problematisk?",
+      "Hva er moralsk nihilisme? Presenter en innvending.",
       "Hva er kulturrelativisme? Presenter to innvendinger.",
-      "Hva er moralsk nihilisme, og hva er en innvending?",
+      "Hvorfor søker normative etiske teorier en allmenngyldig målestokk?",
     ],
   },
   {
@@ -1076,79 +1187,92 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 16",
     forelesning: [3],
     kjerne:
-      "Utilitarismen sier at en handling er rett hvis og bare hvis den gir størst mulig sum av gode konsekvenser for alle som berøres (nytteprinsippet). Varianter er uenige om hva som er godt: nytelse (Bentham), kvalitativt høyere nytelser (Mill) eller oppfylte preferanser (Singer). Alle som kan lide, har moralsk status.",
+      "Utilitarismen sier at bare konsekvensene har moralsk betydning: vi skal alltid velge handlingen som gir størst sum av gode konsekvenser for alle berørte (nytteprinsippet). Utilitarister er uenige om hva som er godt: nytelse (Bentham), kvalitativt høyere gleder (Mill) eller oppfylte preferanser. Alle som kan føle lykke og lidelse, har moralsk status. Teorien var historisk progressiv, men møter innvendinger om rettigheter, at den krever for mye, og om kollektive handlingsproblemer.",
     begreper: [
       [
         "Nytteprinsippet",
-        "Vi bør alltid velge det handlingsalternativet som gir størst sum av gode konsekvenser for alle berørte.",
-      ],
-      ["Konsekvensetikk", "Bare konsekvensene avgjør om en handling er rett eller gal."],
-      [
-        "Hedonisme",
-        "Det eneste som har egenverdi er nytelse/lykke (og fravær av smerte). Klassisk utilitarisme er hedonistisk.",
+        "Vi bør alltid velge handlingsalternativet som gir størst sum av gode konsekvenser for alle berørte. Eks.: et vaksineprogram er riktig selv om noen friske får alvorlige bivirkninger, hvis nettosummen blir best.",
       ],
       [
-        "Benthams lykkekalkyle",
-        "Vi kan beregne nytte ved å se på hvor mange som berøres, intensitet og varighet. Alle nytelser er like mye verdt (kvantitativ).",
+        "Lykke (Bentham)",
+        "Følelse av nytelse eller behag, og fravær av ubehag og smerte. Hvem som føler det og hva som gir det, er likegyldig. Beregnes ut fra antall berørte, intensitet og varighet.",
+      ],
+      [
+        "Forventet nytte",
+        "Ved usikre konsekvenser: nytten ganget med sannsynligheten. Rabiesvaksine er riktig hvis livet er verdt mer enn tusen ganger bryet med vaksinen, når risikoen er 1 av 1000. Gir best utfall over tid.",
       ],
       [
         "Mills kvalitative skille",
-        "Intellektuelle nytelser er høyere enn sanselige. «Bedre å være en misfornøyd Sokrates enn en tilfreds tosk.»",
+        "Avanserte gleder (intellekt, poesi, musikk) er kvalitativt bedre enn enkle. Begrunnes empirisk: de som har prøvd begge, foretrekker de avanserte. Bentham: et enkelt spill er like mye verdt som poesi.",
       ],
       [
         "Preferanseutilitarisme",
-        "Det gode er at flest mulig preferanser (ønsker) blir oppfylt, ikke nødvendigvis nytelse.",
+        "Det gode er at preferanser (ønsker) oppfylles, ikke nødvendigvis lykke (Hare). Styrke: forklarer at vi kan takke nei til en lykkepille. Svakhet: alle preferanser teller likt, også ønsket om å telle gresstrå.",
+      ],
+      [
+        "Avtakende grensenytte",
+        "Jo mer man har av et gode, jo mindre ekstra nytte gir en ekstra enhet. 100 000 kr betyr mye for den som tjener 300 000, lite for en millionær. Taler for utjevning; insentiver taler for noen forskjeller.",
       ],
       [
         "Moralsk status",
-        "At vi har plikter overfor noen. For utilitarister: alle som kan lide (Bentham: «Kan de lide?»).",
+        "At vi kan ha plikter overfor noen. For utilitarister: alle som kan oppleve lykke og lidelse (Bentham: antall bein eller hale er like irrelevant som hudfarge).",
       ],
       [
-        "Artssjåvinisme (speciesism)",
-        "Singer: å gi mennesker forrang bare fordi de er mennesker er like vilkårlig som rasisme.",
+        "Artssjåvinisme (Singer)",
+        "Å gi en like sterk lidelse mindre vekt fordi den rammer et dyr, er sammenlignbart med rasisme. Lik status betyr ikke lik behandling, fordi behovene er ulike.",
       ],
       [
-        "Upartiskhet",
-        "Alles nytte teller likt, også fremmede, dyr og fremtidige generasjoner.",
+        "Moralsk flaks",
+        "At faktiske konsekvenser som skyldes flaks eller uflaks, likevel påvirker hvor mye vi klandrer noen (Nagel).",
+      ],
+      [
+        "Kollektivt handlingsproblem",
+        "Når en gruppe handlinger samlet gir en effekt som ikke er summen av enkelthandlingene, f.eks. klimautslipp.",
       ],
     ],
     teorier: [
       {
-        navn: "Hvordan fordele goder?",
+        navn: "Hvem har moralsk status?",
         tekst:
-          "Utilitarister vil fordele slik at samlet nytte blir størst. Pga. avtagende grensenytte (en ekstra krone betyr mer for en fattig) tilsier dette ofte omfordeling, men i prinsippet kan det også rettferdiggjøre skjev fordeling.",
+          "Dyr: industrielt landbruk er galt fordi vår glede av kjøtt veier lite mot dyrenes lidelse (Singer). Diamond innvender at vi ikke spiser mennesker selv om det ikke gir ubehag, så menneskets særstilling handler om mer enn lidelse. Kontroversielt: Singer mener det kan være tillatt å drepe nyfødte med svært alvorlige funksjonsnedsettelser. Fostre: tidlige fostre kan ikke føle smerte, og potensial er et vanskelig kriterium (Sandels brann i fertilitetsklinikken). Fremtidige generasjoner teller likt, men usikkerhet og bedre teknologi kan gi oss noe mindre ansvar. Arter har ingen egenverdi, bare individer (storsalamanderen).",
+      },
+      {
+        navn: "Fordeling av goder",
+        tekst:
+          "Bare summen av lykke teller, ikke fordelingen. Avtakende grensenytte taler for utjevning, insentiver for noen forskjeller; balansen er et empirisk spørsmål. Likestilling gir bedre ressursbruk. Harriet Taylor Mill: la alle yrker være åpne for alle.",
       },
       {
         navn: "Vurderingssituasjoner",
         tekst:
-          "Utilitarister vurderer ros/klander ut fra forventede konsekvenser (hva man kunne forutse), og ut fra om rosen/klanderen i seg selv gir gode følger.",
+          "Du sovner med pizza i ovnen og huset brenner. Bentham: en intensjon er god hvis konsekvensene du regnet som sannsynlige, var gode. Men i praksis vurderer vi også faktiske konsekvenser (moralsk flaks). Mellomløsning: det som teller, er hva du burde ha forutsett med informasjonen du hadde.",
       },
       {
         navn: "Styrker og svakheter",
         tekst: "",
         for: [
-          "Enkel og systematisk metode; tar alles velferd på alvor (upartisk).",
-          "Historisk progressiv: Bentham for kvinners rettigheter, mot slaveri og fysisk avstraffelse.",
+          "Enkel «universalnøkkel» for både individuelle og politiske beslutninger; alle teller likt.",
+          "Historisk progressiv: Bentham for kvinners rettigheter, dyrevelferd og seksuelle minoriteter, mot slaveri og fysisk avstraffelse av barn.",
           "Inkluderer dyr og fremtidige generasjoner.",
         ],
         mot: [
-          "Kan ofre individets rettigheter for flertallets nytte (f.eks. straffe en uskyldig for å roe en mobb).",
-          "For krevende: man må alltid gjøre det som gir best resultat.",
-          "Vanskelig å måle og sammenligne nytte, og å forutse konsekvenser.",
-          "Overser intensjoner og handlinger som virker gale uansett.",
-          "Overser spesielle relasjoner (familie, løfter).",
+          "Kan krenke individets rettigheter: mer samlet velferd kunne kanskje oppnås ved å ignorere dem med de mest kostbare problemene.",
+          "Krever for mye: 10 000 kr på ferie kunne reddet sju mennesker fra sult i et år. Singer svarer at vi faktisk handler galt (flaskevann).",
+          "Kollektive handlingsproblemer: din flyreise endrer ikke klimaet. Kagan: liten risiko for stor skade er nok. Nefsky: det er kanskje ikke engang en liten risiko.",
+          "Gir et svakt forsvar for natur og arter.",
+          "Fanger dårlig opp motiver, særlige plikter og at noe kan være tillatt uten å være påkrevd (kap. 17).",
         ],
       },
     ],
     eksamen: [
       "Hva går nytteprinsippet ut på?",
-      "Forklar forskjellen på Benthams og Mills utilitarisme.",
-      "Hva er preferanseutilitarisme?",
-      "Hva er moralsk status ifølge utilitarismen?",
+      "Forklar forskjellen på Benthams, Mills og preferanseutilitaristenes syn på hva som er godt.",
+      "Hvordan bør goder fordeles ifølge utilitarismen?",
+      "Hva er moralsk status ifølge utilitarismen? Hva med dyr, fostre, fremtidige generasjoner og arter?",
+      "Hvordan vurderer en utilitarist handlinger som allerede er utført?",
       "Presenter to innvendinger mot utilitarismen.",
     ],
     case:
-      "Bruk: 1) Hva er handlingsalternativene? 2) Hvem berøres (også dyr, fremtidige generasjoner)? 3) Hvilke konsekvenser (positive/negative, sannsynlighet, omfang)? 4) Hvilket alternativ gir størst samlet nytte? 5) Drøft: rettighetsinnvending, målingsproblem.",
+      "Bruk: 1) Hva er handlingsalternativene? 2) Hvem berøres (også dyr og fremtidige generasjoner)? 3) Hvilke konsekvenser, hvor intense, hvor lenge, hvor sannsynlige (forventet nytte)? 4) Hvilket alternativ gir størst samlet nytte? 5) Drøft: rettigheter, for krevende, kollektive handlingsproblemer.",
   },
   {
     slug: "17",
