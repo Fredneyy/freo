@@ -86,7 +86,7 @@ Arbeidsmåte: trekk ut tekst med `pdftotext` per kapittel, kryssjekk mot foreles
 
 **Ferdig når:** alle 22 kapitler har sammendrag, og hvert nøkkelbegrep fra forelesningene finnes i et sammendrag.
 
-## Fase 3 – Eksamensguide
+## Fase 3 – Eksamensguide ✅
 
 `/exph0600/guide`, én side:
 

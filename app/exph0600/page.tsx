@@ -10,7 +10,11 @@ const seksjoner = [
     tittel: "Pensum",
     tekst: "Alle kapitler i Tenk! og tilleggstekstene, kokt ned til det du må kunne.",
   },
-  { tittel: "Eksamensguide", tekst: "Slik svarer du på kortsvar og caseoppgaven." },
+  {
+    href: "/exph0600/guide",
+    tittel: "Eksamensguide",
+    tekst: "Slik svarer du på kortsvar og caseoppgaven, tidsbruk og leseplan.",
+  },
   { tittel: "Quiz", tekst: "Flervalgsspørsmål per del og kapittel." },
   { tittel: "Kortsvar og case", tekst: "Øv med modellsvar og prøveeksamen." },
 ];
