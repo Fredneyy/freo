@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { deler, finnKapittel, kapitler } from "@/content/exph0600/kapitler";
+import { diagrammer } from "./diagrammer";
 
 // Alle kapitler er forhåndsrendret. params avventes utenfor Suspense slik at ukjente slugs gir ekte 404-status.
 export const instant = false;
@@ -42,8 +43,16 @@ export default async function KapittelSide({ params }: PageProps<"/exph0600/pens
 
       <section className="rounded-xl bg-zinc-100 p-5 leading-relaxed dark:bg-zinc-900">
         <h2 className="mb-2 text-sm font-medium uppercase tracking-wide text-zinc-500">Kjernen</h2>
-        <p>{k.kjerne}</p>
+        <div><Avsnitt tekst={k.kjerne} /></div>
       </section>
+
+      {diagrammer[k.slug]?.map((d) => (
+        <figure key={d.tittel} className="space-y-4 rounded-xl border border-zinc-200 p-4 sm:p-5 dark:border-zinc-800">
+          <h2 className="font-semibold">{d.tittel}</h2>
+          {d.figur}
+          {d.tekst && <figcaption className="text-sm text-zinc-600 dark:text-zinc-400">{d.tekst}</figcaption>}
+        </figure>
+      ))}
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">Nøkkelbegreper</h2>
@@ -51,7 +60,9 @@ export default async function KapittelSide({ params }: PageProps<"/exph0600/pens
           {k.begreper.map(([term, forklaring]) => (
             <div key={term} className="py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="font-medium">{term}</dt>
-              <dd className="mt-1 text-zinc-700 sm:col-span-2 sm:mt-0 dark:text-zinc-300">{forklaring}</dd>
+              <dd className="mt-1 text-zinc-700 sm:col-span-2 sm:mt-0 dark:text-zinc-300">
+                <Avsnitt tekst={forklaring} />
+              </dd>
             </div>
           ))}
         </dl>
@@ -62,7 +73,11 @@ export default async function KapittelSide({ params }: PageProps<"/exph0600/pens
         {k.teorier.map((t) => (
           <div key={t.navn} className="rounded-xl border border-zinc-200 p-5 dark:border-zinc-800">
             <h3 className="font-medium">{t.navn}</h3>
-            {t.tekst && <p className="mt-2 leading-relaxed text-zinc-700 dark:text-zinc-300">{t.tekst}</p>}
+            {t.tekst && (
+              <div className="mt-2 leading-relaxed text-zinc-700 dark:text-zinc-300">
+                <Avsnitt tekst={t.tekst} />
+              </div>
+            )}
             {(t.for || t.mot) && (
               <div className="mt-3 grid gap-4 sm:grid-cols-2">
                 {t.for && <Liste tittel="For / styrker" punkter={t.for} farge="text-emerald-600 dark:text-emerald-400" />}
@@ -76,7 +91,9 @@ export default async function KapittelSide({ params }: PageProps<"/exph0600/pens
       {k.case && (
         <section className="space-y-2">
           <h2 className="text-xl font-semibold">Bruk i caseoppgaven</h2>
-          <p className="leading-relaxed text-zinc-700 dark:text-zinc-300">{k.case}</p>
+          <div className="leading-relaxed text-zinc-700 dark:text-zinc-300">
+            <Avsnitt tekst={k.case} />
+          </div>
         </section>
       )}
 
@@ -119,5 +136,27 @@ function Liste({ tittel, punkter, farge }: { tittel: string; punkter: string[]; 
         ))}
       </ul>
     </div>
+  );
+}
+
+// Viser «… 1) a 2) b» som nummerert liste. Deler bare der tallene kommer i rekkefølge fra 1,
+// slik at henvisninger som «(Sober, 2004, s. 42)» ikke tolkes som listepunkter.
+function Avsnitt({ tekst }: { tekst: string }) {
+  const kutt: number[] = [];
+  for (const m of tekst.matchAll(/(?:^|\s)(\d+)\) /g)) {
+    if (Number(m[1]) === kutt.length + 1) kutt.push(m.index + (m[0].startsWith(" ") ? 1 : 0));
+  }
+  if (kutt.length < 2) return <>{tekst}</>;
+  const intro = tekst.slice(0, kutt[0]).trim();
+  const punkter = kutt.map((k, i) => tekst.slice(k, kutt[i + 1]).replace(/^\d+\) /, "").trim());
+  return (
+    <>
+      {intro && <span className="block">{intro}</span>}
+      <ol className="mt-1 list-decimal space-y-1 pl-5">
+        {punkter.map((p) => (
+          <li key={p}>{p}</li>
+        ))}
+      </ol>
+    </>
   );
 }
