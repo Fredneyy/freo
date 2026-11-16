@@ -858,73 +858,98 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 13",
     forelesning: [7],
     kjerne:
-      "Teknologi er tosidig: den gir nye muligheter, men skaper også nye problemer og krav. Tre teknologisyn: instrumentalisme (teknologi er nøytrale verktøy vi styrer), determinisme (teknologien styrer samfunnsutviklingen) og det relasjonelle synet (teknologi og samfunn former hverandre gjensidig). Teknologi inngår i sosiotekniske nettverk som gjør den vanskelig å regulere.",
+      "Teknologi er tosidig: den gir muligheter (ChatGPT, digitalisering, velferdsteknologi), men har også verdimessige følger som unnslipper vår kontroll. Derfor blir teknologiske valg samtidig samfunnsvalg. Tre teknologisyn: instrumentalisme (teknologi er nøytrale verktøy vi styrer), determinisme (teknologien legger premissene) og det relasjonelle synet (teknologi og mennesker former hverandre gjensidig). Teknologi inngår i sosiotekniske nettverk som gjør den vanskelig å regulere, og vi kan ikke bedømme morgendagens teknologi sikkert med dagens normer. Løsningen er teknologibevissthet.",
     begreper: [
-      ["Teknologi", "Fra tékhnē (kunst, håndverk) + logos (lære): kunnskap om å frembringe ting."],
+      [
+        "Teknologi",
+        "Fra technê (ferdighet til å fremstille noe, Aristoteles) + logos (kunnskap): «kunnskap om produksjon». I dagligtale konkrete gjenstander. Boken definerer ikke begrepet, men ser på hvordan teknologi former forholdet vårt til verden (Ihde, Verbeek).",
+      ],
       [
         "Teknologiens tosidighet",
-        "Teknologier åpner muligheter, men innebærer risiko og stiller krav til brukeren (en digital tjeneste krever utstyr og kompetanse). Kong Thamus i Faidros: å oppfinne er én ting, å bedømme virkningene en annen.",
+        "Teknologier gir positive muligheter, men har verdimessige følger som unnslipper vår fulle kontroll. Eks.: digitalisering gjør tjenester enklere, men krever utstyr og kompetanse og kan skape digitalt utenforskap.",
       ],
       [
         "Teknologisk instrumentalisme",
-        "Teknologi er rene, verdinøytrale instrumenter. Det er bruken som gir gode eller dårlige følger, og vi styrer den gjennom politikk, lov og økonomi.",
+        "Teknologi er rene, verdinøytrale instrumenter. Bruken avgjør om den er god eller dårlig (hammeren: spiker eller hode). Vi styrer utviklingen med politiske, etiske, juridiske og økonomiske virkemidler (Pitt). Heidegger: «den instrumentale og antropologiske bestemmelsen av teknikken».",
       ],
       [
         "Teknologisk determinisme",
-        "Teknologien legger premissene for samfunnsutviklingen. Kan være optimistisk (teknologi gir et bedre samfunn) eller dystopisk (teknologien ødelegger verdier).",
+        "Teknologien legger i større eller mindre grad premissene for samfunnsutviklingen; vi reagerer heller enn å agere (atomteknologien formet politikken etter 1940). Kan være dystopisk eller optimistisk. Teknologi er verdiladet.",
       ],
       [
         "Relasjonelt teknologisyn",
-        "Teknologi og menneske/samfunn er gjensidig definerende. Teknologi er verdiladet, men vi domineres ikke av den; den legger føringer, men bestemmer ikke alt.",
+        "(Ihde, Latour, Barad) Avviser det skarpe skillet mellom menneske og teknologi som begge ismene bygger på. Vi former teknologien, og den former oss. Teknologi er verdiladet, men verdien av en handling skyldes samspillet. Vi kan ikke si noe generelt; hver teknologi må undersøkes i sin kontekst (Verbeek).",
       ],
-      ["Teknologiens verdiladethet", "Teknologier har verdimessige følger som ikke bare kan spores tilbake til brukeren."],
+      [
+        "Teknologiens verdiladethet",
+        "Teknologi gjør noe lettere, mer attraktivt eller mulig, og stiller krav til bruken. En trapp lar oss bygge i flere etasjer, men forutsetter fungerende bein (Morrow).",
+      ],
+      [
+        "Kyborg (Haraway)",
+        "Skillet mellom det menneskelige og det teknologiske er ubestemmelig. Vi kan være 100 % biologiske og likevel kyborger, fordi livet vårt er sammenfiltret med teknologi fra fødselen.",
+      ],
+      [
+        "Skråplansargument",
+        "«Tillater vi A, fører det til uønsket B.» Problematisk fordi B sjelden følger nødvendig av A. Platon om skrift, kritikk av ChatGPT og Turkle om sosiale medier kan ta denne formen.",
+      ],
       [
         "Sosioteknisk nettverk",
-        "Nettverket av aktører rundt en teknologi (bil: veier, verksteder, lover, avgifter, kjøreskoler, politi). Gjør påvirkningen spredt og vanskelig å regulere.",
+        "Nettverket av økonomiske og sosiale aktører rundt et produkt eller en tjeneste (bil: veier, politi, kjøreskoler, verksteder, lover, avgifter, arbeidsplasser). Gir gjensidig avhengighet som gjør regulering vanskelig (Collingridge). Påvirkningen fra teknologien kan være sterk (olje og gass, digitalisering) eller svak.",
       ],
-      ["Kyborg", "Blanding av menneske og maskin. Haraway: grensen mellom menneske og teknologi er uklar."],
-      ["Transhumanisme", "Ideologi om å bruke teknologi til å forbedre menneskets fysiske og mentale egenskaper."],
       [
-        "Teknologisk logikk",
-        "Heidegger: moderne teknologi får oss til å se alt (også naturen) som ressurser som skal utnyttes effektivt.",
+        "Kunstig intelligens",
+        "Informasjonsteknologi som utfører regelstyrte oppgaver vi vanligvis tenker krever kognitiv innsats. Reglene kan være programmert eller lært gjennom maskinlæring (Coeckelbergh).",
       ],
       [
         "Teknologibevissthet",
-        "Erkjennelse av at teknologi er tosidig og verdiladet, og at kontrollen over den sjelden er fullstendig.",
+        "Kunnskap om hvordan teknologi påvirker oss som individer og samfunnsstrukturer. Teknologi kan forme, men ikke bestemme. Gjelder politikere, utviklere (samfunnsansvar) og alle brukere: «Vi trenger alle å bli mer kritiske teknologibrukere, ellers risikerer vi å bli teknologibrukte.»",
       ],
+      ["Transhumanisme (forelesning)", "Ideologi om å bruke teknologi til å forbedre menneskets fysiske og mentale egenskaper."],
     ],
     teorier: [
       {
-        navn: "Instrumentalisme",
-        tekst: "«Våpen dreper ikke, mennesker gjør.»",
-        for: ["Plasserer ansvar hos brukere og politikere.", "Gir tro på at vi kan styre utviklingen."],
-        mot: ["Overser at teknologier har innebygde verdier og føringer (Winners broer).", "Overser sosiotekniske nettverk."],
+        navn: "Mennesket og teknologien",
+        tekst:
+          "Gehlen: uten teknologi hadde vi ikke overlevd. Teknologi forsterker (hammer), avlaster (løfterobot) og erstatter (ansiktsgjenkjenning) våre evner. Stiegler: det er ikke mennesket som har funnet opp teknologien, men omvendt; teknologi overfører kultur mellom generasjoner, og vi drives av teknologisk mer enn biologisk evolusjon.",
       },
       {
-        navn: "Determinisme",
-        tekst: "Samfunnet må tilpasse seg teknologien.",
-        for: ["Fanger hvor sterkt teknologi (skrift, klokke, trykkekunst, internett) har endret samfunnet."],
-        mot: ["Overser at teknologi utvikles og tas i bruk gjennom menneskelige valg.", "Kan frata oss ansvar."],
+        navn: "Bør vi frykte teknologien? Kan vi bedømme den i dag?",
+        tekst:
+          "Platon (Faidros): kong Thamus mente skriften ville svekke hukommelsen. Turkle: sosiale medier gir vennskap uten friksjon, men det er en illusjon; som tobakk og Coca-Cola ser vi skadene først senere. Innvendinger: slike argumenter blir lett skråplansargumenter, og de bedømmer morgendagen med dagens verdier. Skriften opphevet Platons ideal. Likevel er realistiske fremtidsscenarioer nyttige for å diskutere hva vi vil med teknologien (Swierstra).",
+      },
+      {
+        navn: "Determinisme: optimistisk og dystopisk",
+        tekst:
+          "Marx (optimistisk): teknologien former økonomien og dermed hele samfunnet; i arbeidernes hender kan den frigjøre. Heidegger (dystopisk): moderne teknologi gjør at vi ser alt som ressurser. Det moderne vannkraftverket «overmanner» elva, og vindkraft på Fosen måles i CO2, ikke i naturens egenverdi eller samiske rettigheter. Jaspers: industriell masseproduksjon gir forbrukersamfunn og fremmedgjøring. Men motbevegelser (reparasjon, REKO-ringer) viser at vi ikke uten videre underkaster oss.",
       },
       {
         navn: "Kan en bro være rasistisk? (Winner)",
         tekst:
-          "Robert Moses bygde lave broer over parkveiene til Long Island, slik at busser (som fattige og svarte i stor grad var avhengige av) ikke kom frem. Eksempel på at teknologi kan ha politiske verdier innebygd.",
+          "«Technologies have politics.» Robert Moses bygde lave broer over veiene til Jones Beach, slik at busser, som fattige og fargede var avhengige av, ikke kom frem. Analysen er kanskje ensidig, men poenget står: teknologier har verdiladde følger, enten de er designet bevisst eller er bieffekter. Moses utnyttet nettopp verdiladetheten.",
       },
       {
-        navn: "Kan vi bedømme morgendagens teknologi med dagens normer?",
+        navn: "Uforutsette følger",
         tekst:
-          "Platon fryktet at skriften ville svekke hukommelsen. Teknologi endrer også normene vi bedømmer den med, så kritikk av ny teknologi (f.eks. KI) bør ta høyde for dette.",
+          "Sparepærer i Nederland økte strømforbruket fordi folk lyste opp flere rom. Viagra ble utviklet mot høyt blodtrykk. Algoritmer (Netflix, Spotify) får oss til å spørre om vi styrer teknologien eller den oss.",
+      },
+      {
+        navn: "Etiske utfordringer med KI",
+        tekst:
+          "Noë: KI er regelstyrt informasjonsbehandling; en klokke holder tiden, men vet ikke hva klokken er. Utfordringer: skjeve data (Tay ble rasistisk, bildegjenkjenning bommer oftere på kvinner og fargede, risikoalgoritmen i amerikansk rettsvesen vurderte Borden og Prater ulikt etter hudfarge), falske nyheter, ansiktsgjenkjenning for overvåking av uigurer, autonome våpen (hvem har ansvaret?), filterbobler, tillit (Watson Oncology foreslo dødelige behandlinger), personvern og gratis arbeid (CAPTCHA).",
       },
     ],
     eksamen: [
       "Gjør rede for teknologisk instrumentalisme, determinisme og det relasjonelle synet.",
-      "Hva menes med teknologiens tosidighet?",
+      "Hva menes med teknologiens tosidighet og verdiladethet? Gi eksempler.",
+      "Er teknologi verdinøytral? Bruk Winners broer.",
       "Hva er et sosioteknisk nettverk, og hvorfor gjør det regulering vanskelig?",
       "Hvorfor er det vanskelig å bedømme morgendagens teknologi ut fra dagens normer?",
+      "Hva er et skråplansargument, og hvorfor er det problematisk?",
+      "Drøft noen etiske utfordringer ved kunstig intelligens.",
+      "Hva er teknologibevissthet, og hvem har ansvar for den?",
     ],
     case:
-      "Typisk case: ny teknologi (KI, selvkjørende biler, genteknologi). Vurder den fra alle tre teknologisyn: Hva sier instrumentalisten om ansvar? Hva frykter/håper deterministen? Hvordan ville det relasjonelle synet beskrevet samspillet? Pek på tosidighet og sosiotekniske nettverk.",
+      "Typisk case: ny teknologi (KI, selvkjørende biler, digitalisering, vindkraft). 1) Hva er tosidigheten: muligheter og risikoer? 2) Hva ville instrumentalisten, deterministen og det relasjonelle synet sagt? 3) Hvilke verdier er bygd inn, og hvem rammes (Winner)? 4) Hvilket sosioteknisk nettverk inngår den i? 5) Hva krever teknologibevissthet av utviklere, politikere og brukere?",
   },
 
   // ───────────── DEL 4 ─────────────
@@ -1026,6 +1051,10 @@ export const kapitler: Kapittel[] = [
       [
         "Aktørorientert teori",
         "Fokuserer på hva slags person man bør være, ikke på regler for handlinger (dydsetikk).",
+      ],
+      [
+        "Ettprinsippteori",
+        "Teori som forutsetter at én målestokk kan avgjøre alle spørsmål om rett og godt (utilitarisme, pliktetikk). Lykkes den, har vi en «universalnøkkel» til nye moralske spørsmål.",
       ],
     ],
     teorier: [
@@ -1309,7 +1338,7 @@ export const kapitler: Kapittel[] = [
       ],
       [
         "Myk paternalisme",
-        "Å hindre noen midlertidig for å sikre at de forstår risikoen. Forenlig med skadeprinsippet. Eks.: lege informerer om risikoen ved å nekte blod.",
+        "Å hindre noen midlertidig for å sikre at de forstår risikoen. Forenlig med skadeprinsippet. Eks.: pasientrettigheter. Helsepersonell informerer, men en informert, myndig pasient har siste ord og kan si nei til behandling.",
       ],
       [
         "Hard paternalisme",
@@ -1325,7 +1354,7 @@ export const kapitler: Kapittel[] = [
       {
         navn: "Mill om ytringsfrihet",
         tekst:
-          "Det må være lov å uttrykke ethvert synspunkt så lenge man ikke oppfordrer til vold; krenkelse er ikke nok til å straffe. Begrunnelser: 1) Det sensurerte kan være sant. 2) Selv usanne meninger kan inneholde en del av sannheten. 3) Sanne meninger som ikke utfordres blir døde dogmer; vi må kunne begrunne dem. Sensur er et ran av nåværende og fremtidige generasjoner.",
+          "Det må være lov å uttrykke ethvert synspunkt så lenge man ikke oppfordrer til vold; krenkelse er ikke nok til å straffe. Kornhandleren: å rope «kornhandleren sulter ut de fattige» foran en lynsjemobb kan straffes, å skrive det i en avis kan ikke. Begrunnelser: 1) Det sensurerte kan være sant. 2) Selv usanne meninger kan inneholde en del av sannheten. 3) Sanne meninger som ikke utfordres blir døde dogmer; vi må kunne begrunne dem. Sensur er et ran av nåværende og fremtidige generasjoner.",
       },
       {
         navn: "Livsstilsfrihet",
@@ -1341,9 +1370,11 @@ export const kapitler: Kapittel[] = [
         navn: "Problemer med skadeprinsippet",
         tekst: "",
         mot: [
-          "Uklart hva som er skade: hvilke interesser teller? (Sexkjøpsloven, free solo der redningsmannskap risikerer livet.)",
-          "Få handlinger skader bare den som handler.",
-          "Conly: mennesker tar ofte dårlige valg pga. begrenset selvkontroll; hard paternalisme (bilbelte, sykkelhjelm) kan være rimelig.",
+          "Uklart hva som er skade: hvilke interesser teller? Ubehag over at andre lever i likekjønnede forhold bør ikke telle, men hvor går grensen?",
+          "Skade er ikke nok: en dyktigere konkurrent kan slå ut kaffebaren din uten at det bør forbys. Prinsippet er bare en nødvendig betingelse, og vi må i tillegg veie nytte mot kostnad. Sexkjøpsloven: mindre menneskehandel, men mer utrygghet for sexarbeidere.",
+          "Få handlinger skader bare den som handler: kjederøykeren og fjellklatreren belaster helsevesen og redningstjeneste.",
+          "Er hard paternalisme alltid galt (selvmord)? Conly: vi er dårlige beslutningstakere, så staten bør beskytte oss mot oss selv (forby sigaretter, begrense usunn mat og store lån), men bare med de mest hensiktsmessige tiltakene.",
+          "Selv Mill avviser slavekontrakter: man kan ikke ha frihet til å si fra seg friheten. Da er prinsippet heller ikke en nødvendig betingelse for inngrep.",
         ],
       },
     ],
@@ -1364,76 +1395,91 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 20",
     forelesning: [11],
     kjerne:
-      "Teorier om naturlige/iboende rettigheter (Kant, Wollstonecraft) sier at vi har rettigheter i kraft av å være fornuftige personer, ikke fordi de gir gode konsekvenser. Politisk frihet forstås som ikke-dominans: å ikke være underlagt andres vilkårlige vilje. Dette brukes som grunnlag for likestilling.",
+      "Teorier om naturlige (iboende) rettigheter sier at vi har rettigheter i kraft av å være mennesker, uavhengig av om de gir gode konsekvenser. Rettighetene er skranker for hvilke midler vi kan bruke for gode formål (Daschner-saken: tortur er forbudt selv for å redde et barn). Hos Kant og Wollstonecraft er frihet ikke-dominans: å ikke være prisgitt andres vilkårlige vilje. Det krever demokrati, motvirking av fattigdom og likestilling. Mill har derimot et instrumentelt syn på rettigheter.",
     begreper: [
       [
         "Naturlige/iboende rettigheter",
-        "Rettigheter vi har i kraft av å være mennesker/fornuftige vesener, og som begrenser hva staten og andre kan gjøre mot oss, selv om det ville gitt gode konsekvenser. Eks.: slavekontrakter er ugyldige.",
+        "Rettigheter alle har i kraft av å være mennesker (liv, sikkerhet, eiendom, frihet fra undertrykkelse). De begrenser hva både privatpersoner og myndigheter kan gjøre. Slavekontrakter er ugyldige fordi de bryter med rettighetene, ikke fordi slaveri gir lidelse (som hos Mill).",
       ],
       [
         "Statusbasert rettighetsteori",
-        "Vi har rettigheter fordi vi er vesener med evner (fornuft, autonomi) som krever respekt. (Kant)",
+        "Vi har rettigheter fordi vi er vesener med evner som krever respekt (selvbevisste, selvstendig tenkende). Naturrettstradisjonen; i dag f.eks. Kamm og Nagel.",
       ],
       [
-        "Interessebasert/instrumentalistisk rettighetsteori",
-        "Rettigheter er midler for å fremme velferd og interesser. (Mill)",
+        "Interessebasert (instrumentalistisk) rettighetsteori",
+        "Rettigheter er midler for å fremme velferd og interesser (Mill). Hvilke rettigheter vi bør ha, avhenger av empiriske forhold.",
       ],
-      [
-        "Ikke-innblanding",
-        "Negativ frihet som fravær av inngrep i det man gjør.",
-      ],
+      ["Ikke-innblanding", "Mills negative frihet: fravær av hindringer påført av andre (tvang, trusler)."],
       [
         "Ikke-dominans",
-        "Frihet som uavhengighet av andres vilkårlige vilje. Slaven med en snill herre er ufri selv om herren aldri griper inn. Statens oppgave er å hindre dominansforhold mellom privatpersoner.",
+        "Kant og Wollstonecrafts negative frihet: at ingen er i posisjon til å utøve vilkårlig makt over oss. Slaven med en snill herre er ufri, selv om ingen hindrer ham. Lover kan begrense oss og likevel gjøre oss frie.",
+      ],
+      [
+        "Positiv frihet",
+        "De indre faktorene som gjør det mulig å handle fritt og bestemme selv. Politisk: retten til å delta i lovgivningen.",
       ],
       [
         "Likhetsfeminisme",
-        "Vektlegger likhetene mellom kjønnene; kvinner skal ha samme rettigheter og muligheter som menn (Wollstonecraft: felles fornuft).",
+        "Det er ingen grunnleggende forskjeller mellom kjønnene, så alle skal ha de samme rettighetene og mulighetene.",
       ],
       [
         "Forskjellsfeminisme",
-        "Kjønnene er grunnleggende ulike; kvinners særegne bidrag bør verdsettes høyere.",
+        "Kjønnene er grunnleggende ulike. Likestilling handler ikke om at kvinner skal gjøre det samme som menn, men om at kvinners bidrag verdsettes høyere.",
       ],
       [
         "Klassisk liberal feminisme",
-        "Staten skal ikke forskjellsbehandle, men ellers blande seg minst mulig.",
+        "Staten skal ikke forskjellsbehandle kjønnene, men ellers blande seg minst mulig i hva voksne gjør med egen kropp og hvilke avtaler de inngår.",
       ],
       [
-        "Egalitær liberal feminisme",
-        "Kjønnsskjevheter skyldes også patriarkalske strukturer; staten bør aktivt motvirke dem (f.eks. kvotering, øremerket permisjon).",
+        "Egalitær liberal feminisme (Okin)",
+        "Like formelle rettigheter er ikke nok. Kjønnsroller og arbeidsdeling hjemme gir strukturelle skjevheter, så staten må aktivt legge til rette for likestilling.",
       ],
     ],
     teorier: [
       {
-        navn: "Kant",
+        navn: "Kant og Wollstonecraft: frihet som ikke-dominans",
         tekst:
-          "Frihet er ikke å gjøre hva man vil, men å være et selvstendig, rasjonelt vesen som styrer etter egen fornuft (autonomi). Mennesker har verdighet og kan aldri brukes bare som middel. Staten kan aldri legitimt krenke frihet og verdighet, selv for gode konsekvenser.",
+          "Frihet må være lik frihet for alle. Kant: «Enhver handling er rett hvis den, eller dens maksime, er slik at enhver sin vilkårlige frihet kan bestå sammen med alles frihet i samsvar med en allmenn lov.» Det minner om det kategoriske imperativ, men stiller ingen krav til motivet. Ikke-dominans krever at alle har politisk representasjon (demokrati). Wollstonecraft: store klasseforskjeller gjør de fattige prisgitt de rike, og fattigdom er derfor uforenlig med frihet. Kant: staten har plikt til å forsørge de fattige.",
       },
       {
-        navn: "Wollstonecraft",
+        navn: "Wollstonecraft om likestilling",
         tekst:
-          "Deler Kants syn på frihet som rasjonell selvstendighet, men insisterer på at dette gjelder kvinner like mye som menn. Ekteskap og lover som gjør kvinner avhengige av menn er dominans.",
+          "Kvinner har samme fornuft som menn; det som gjør dem «dumme», er oppdragelsen. De må ha samme rettigheter og være økonomisk selvstendige. Likevel mener hun at kvinner har en morsplikt som borgerplikt. Det tolkes enten som ufullstendig likhetsfeminisme eller som et forskjellsfeministisk trekk.",
+      },
+      {
+        navn: "Okin: en fremtid uten kjønn",
+        tekst:
+          "Forventninger om at kvinner tar hovedansvaret for barn, og at arbeidstakere ikke gjør det, forsterker skjevheter hjemme og på jobb. Kjønn (gender) bør bli like irrelevant som øyefarge. Tiltak: lik permisjon for begge foreldre, fleksibel arbeidstid og barnepass, kjønnsbalanse ved ansettelser, likestilling i skolen, og at lønnen deles likt mellom ektefellene. Klassiske liberalfeminister kaller dette paternalisme.",
+      },
+      {
+        navn: "Ytringsfrihet og hatytringer",
+        tekst:
+          "Kamm: ytringsfrihet er den eneste passende måten å behandle personer med egne meninger på. Nagel: forbud mot hatytringer er en urett mot oss alle, fordi det ikke respekterer at voksne kan gjøre seg opp egne meninger. En interessebasert kritiker må i stedet vise at forbud ikke virker eller gjør skade (ekkokamre, misbruk), og det er vanskelig å påvise.",
       },
       {
         navn: "For og mot naturlige rettigheter",
         tekst: "",
         for: [
-          "Beskytter individet mot å ofres for flertallets nytte (sterkere vern enn interessebasert teori).",
-          "Forklarer hvorfor tortur og slaveri er galt uansett konsekvens.",
+          "Forklarer ubetingede forpliktelser (ikke drepe, ikke straffe uten lov og dom). De fungerer som trumf og utelukker visse handlinger, i stedet for å bli veid mot andre hensyn.",
+          "Mills instrumentelle rettigheter er empirisk betinget og for svake: hvis summariske henrettelser ga mindre vold, kunne retten til rettergang settes til side.",
         ],
         mot: [
-          "Vanskelig å begrunne uten sirkularitet: hvorfor har vi akkurat disse rettighetene?",
-          "Hvem regnes som fornuftige personer? (Barn, dyr, personer med kognitive funksjonsnedsettelser.)",
-          "Kan være rigid når rettigheter kolliderer med store konsekvenser (truet tortur av kidnapper).",
+          "Mangler begrunnelse: hvorfor skulle vi være født med en ukrenkelig verdighet?",
+          "Sirkulært: rettighetene begrunnes i personstatusen, men personstatusen er definert av rettighetene.",
+          "Uenighet blant tilhengerne: Nozick mener omfordeling krenker eiendomsretten, mens Kant og Murphy og Nagel mener det motsatte.",
         ],
       },
     ],
     eksamen: [
-      "Forklar forskjellen på en statusbasert og en interessebasert teori om rettigheter.",
+      "Forklar forskjellen på en teori om naturlige rettigheter og en instrumentalistisk teori om rettigheter.",
       "Hva er forskjellen på frihet som ikke-innblanding og som ikke-dominans?",
-      "Hva er forskjellen på likhetsfeminisme og forskjellsfeminisme?",
+      "Hvorfor er fattigdom et problem for frihet ifølge Wollstonecraft og Kant?",
+      "Hva er forskjellen på likhetsfeminisme og forskjellsfeminisme? Hvor plasserer du Wollstonecraft?",
+      "Hva er forskjellen på klassisk og egalitær liberal feminisme?",
       "Presenter en styrke og en svakhet ved teorier om naturlige rettigheter.",
     ],
+    case:
+      "Bruk: 1) Hvilke rettigheter står på spill? 2) Blir noen dominert, altså prisgitt andres vilkårlige vilje (arbeidsgiver, partner, plattform)? 3) Er tiltaket en skranke som ikke kan veies bort (ingen tortur, rettferdig rettergang)? 4) Sammenlign med Mill: hva sier en nyttebegrunnelse? 5) Drøft begrunnelsesproblemet.",
   },
   {
     slug: "21",
@@ -1442,63 +1488,83 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 21",
     forelesning: [12],
     kjerne:
-      "Med utgangspunkt i Aristoteles' idé om at mennesket er et politisk dyr som bare realiserer seg i fellesskap, kritiserer Charles Taylor den atomistiske liberalismen og forsvarer forskjellspolitikk (anerkjennelse av kulturer). Martha Nussbaums kapabilitetstilnærming sier at rettferdighet handler om hva folk faktisk er i stand til å gjøre og være.",
+      "Et vanlig liberalt ideal er at staten skal være nøytral om hva som er et godt liv. Aristoteles mente derimot at mennesket er et politisk dyr som bare kan realisere seg i fellesskap. Charles Taylor og Martha Nussbaum avviser nøytralitetsidealet, men regner seg som liberale og legger mer vekt på positiv frihet. Taylor kritiserer politisk atomisme og forsvarer forskjellspolitikk. Nussbaums kapabilitetstilnærming måler livskvalitet ut fra hva folk faktisk er i stand til å gjøre og være.",
     begreper: [
       [
-        "Liberalisme",
-        "Politisk retning som setter individets frihet og rettigheter i sentrum. Nøytralitetsidealet: staten skal ikke favorisere noen bestemt oppfatning av det gode liv.",
+        "Nøytralitetsidealet",
+        "Staten skal ikke favorisere noe bestemt syn på det gode liv, men legge til rette for at hver og en søker lykken på sin måte.",
       ],
       [
         "Politisk atomisme",
-        "Synet at goder er grunnleggende individuelle, og at individets rettigheter er mer grunnleggende enn plikter overfor fellesskapet (f.eks. Locke).",
-      ],
-      [
-        "Holistisk liberalisme",
-        "Individet formes av fellesskapene det tilhører; rettigheter må forstås i lys av institusjonene som gjør dem mulige (Taylor).",
+        "(a) Menneskelige goder er grunnleggende individuelle, og (b) individets rettigheter er mer grunnleggende enn forpliktelser overfor samfunnet. Taylor knytter det til Locke: staten er et nyttig redskap, og politiske plikter krever samtykke.",
       ],
       [
         "Rettighetenes forrang",
-        "Doktrinen om at respekt for individets rettigheter alltid kommer først. Kritiseres av Taylor.",
+        "Doktrinen om at vi primært har rettigheter, mens forpliktelser overfor fellesskapet er sekundære.",
       ],
       [
+        "Holistisk liberalisme",
+        "Taylors liberalisme, som vektlegger at vi er avhengige av samfunnet. Begrunner at skattepenger brukes på kulturbærende institusjoner og infrastruktur, ikke bare politi og rettsvesen.",
+      ],
+      ["Likeverdighetspolitikk", "Politikk med likeverd og like rettigheter for alle i sentrum. Kan begrunne kvotering for å kompensere for dårlig utgangsposisjon, med mål om at forskjellsbehandling blir unødvendig."],
+      [
         "Forskjellspolitikk",
-        "Rettferdighet krever anerkjennelse av gruppers egenart, ikke bare like formelle rettigheter (f.eks. støtte til minoritetsspråk).",
+        "Politikk som anerkjenner og vil bevare det særegne ved personers og gruppers identitet (språk, tradisjoner). Eks.: samisk språkopplæring, Quebecs språklover, Youngs forslag om reserverte seter for undertrykte grupper.",
+      ],
+      [
+        "Grunnleggende vs. mindre grunnleggende rettigheter",
+        "Taylor: liv, frihet, rettferdig rettergang, ytrings- og religionsfrihet kan aldri krenkes. Mindre grunnleggende rettigheter (valg av skolespråk) kan vike for kulturell overlevelse. Derfor kan han støtte Quebec og avvise fatwaen mot Rushdie.",
       ],
       [
         "Kapabilitet",
-        "De faktiske mulighetene et menneske har til å utøve en typisk menneskelig funksjon (Sen, Nussbaum).",
+        "De faktiske mulighetene et menneske har til å utøve en typisk menneskelig funksjon (Nussbaum, Sen). Det er kapabiliteter, ikke funksjoner, som er politikkens mål.",
+      ],
+      [
+        "Tilpassede preferanser",
+        "Vi tilpasser ønskene våre til situasjonen vi er i. Den som aldri har fått skolegang, kan være fornøyd uten. Gjør tilfredshet til et dårlig mål på livskvalitet.",
       ],
     ],
     teorier: [
       {
         navn: "Taylor: intet menneske er en øy",
         tekst:
-          "Vi kan bare utvikle evner som autonomi og fornuft i et fellesskap med språk, kultur og institusjoner. Da har vi også plikter til å opprettholde disse fellesskapene.",
+          "Samfunnet gir oss «selve muligheten til å være et menneske som søker det gode». Evnen til selvstendige livsvalg krever kjennskap til alternativer og en kultur for offentlig meningsutveksling, som igjen krever institusjoner (skoler, universiteter, aviser, domstoler) og infrastruktur. Respekterer vi evnene som gir oss rettigheter, må vi også bidra til at de kan utvikles. Da er pliktene til fellesskapet like grunnleggende som rettighetene, og rettighetenes forrang faller.",
       },
       {
         navn: "To problemer med forskjellspolitikk",
         tekst:
-          "1) Kulturbevaring kan bli konserverende og undertrykkende overfor individer i gruppen (f.eks. arrangerte ekteskap). 2) Habermas: en kultur kan ikke bevares som en truet art; den lever bare videre hvis nye generasjoner frivillig og kritisk gjør den til sin.",
+          "1) Konserverende effekt: kulturbevaring kan favorisere de dominerende i gruppen og hindre fornyelse. Appiah: barnas selvbestemmelse må gå foran foreldrenes ønske om arrangert ekteskap. Habermas: en kultur kan ikke bevares som en truet art, men lever bare hvis nye generasjoner kritisk og frivillig gjør den til sin. 2) Mangler kriterier: når kan kultur trumfe likestilling? Benhabib: Indian Act fratok kvinner som giftet seg utenfor stammen rettigheter, mens menn beholdt dem. Hva med statskirke i Norge?",
       },
       {
         navn: "Nussbaums ti kapabiliteter",
         tekst:
-          "Liv; kroppslig helse; kroppslig integritet; sanser, forestillingsevne og tenkning; følelser; praktisk fornuft; tilknytning; forhold til andre arter; lek; kontroll over egne omgivelser (politisk og materielt). Dette er minimumsterskler som alle stater skal sikre alle borgere.",
+          "Liv; kroppslig helse; kroppslig integritet; sanser, forestillingsevne og tenkning; følelser; praktisk fornuft; tilknytning; forhold til andre arter; lek; kontroll over egne omgivelser (politisk og materielt). Et minimum for et verdig liv. Ingen kan byttes mot en annen, og sivile og politiske rettigheter er ikke viktigere enn økonomiske og sosiale: ytringsfrihet hjelper lite for den som må bruke all tid på å skaffe mat. Staten må aktivt sikre dem, også mot private (vold mot kvinner).",
       },
       {
-        navn: "Kapabilitetstilnærmingen vs. andre teorier",
+        navn: "Kapabilitetstilnærmingen vs. andre mål på livskvalitet",
         tekst:
-          "Like ressurser gir ikke like muligheter (rullestolbruker trenger mer for samme mobilitet). Mot klassisk liberalisme: formelle rettigheter er ikke nok, man må ha reelle forutsetninger. Mot utilitarismen: ingen kan ofres for samlet lykke; hver person har krav på alle kapabilitetene.",
+          "Mot rikdom som mål: penger har bare instrumentell verdi, og en rullestolbruker trenger mer for samme mobilitet. Mot utilitarismen (gjennomsnittlig tilfredshet): 1) snittet kan skjule at mange, f.eks. kvinner, har det dårlig; 2) ulike goder slås sammen, men politisk frihet bør ikke byttes mot velstand; 3) tilfredshet er upålitelig pga. tilpassede preferanser.",
+      },
+      {
+        navn: "Er tilnærmingen kulturelt nøytral nok?",
+        tekst: "",
+        for: [
+          "Et «frittstående moralsk ideal» som kan aksepteres på tvers av livssyn. Ligner FNs menneskerettighetserklæring.",
+          "Åpen for tolkning: ytringsfrihet kan spesifiseres ulikt i USA og Tyskland.",
+          "Ikke paternalistisk: staten sikrer muligheter, men den enkelte velger (man kan faste eller la være å stemme).",
+        ],
         mot: [
-          "Er listen universell eller vestlig? Tar den nok hensyn til kulturelt mangfold?",
-          "Uklart hvor tersklene går og hvordan man prioriterer når ressursene er knappe.",
+          "Noen punkter kan være uttrykk for Nussbaums egne kulturbestemte verdier.",
+          "Sier bare noe om et minimum, ikke om fordeling over minimum eller utjevning av økonomiske forskjeller.",
         ],
       },
     ],
     eksamen: [
+      "Hva er nøytralitetsidealet, og hvorfor avviser Taylor og Nussbaum det?",
       "Forklar forskjellen på atomistisk og holistisk liberalisme.",
-      "Hva er forskjellspolitikk? Nevn et problem med den.",
-      "Hva kjennetegner kapabilitetstilnærmingen?",
+      "Hva er forskjellen på forskjellspolitikk og likeverdighetspolitikk?",
+      "Gjør rede for to problemer med forskjellspolitikk.",
+      "Hva kjennetegner kapabilitetstilnærmingen, og hvordan skiller den seg fra utilitarismen?",
       "Hvilke plikter har staten ifølge kapabilitetstilnærmingen?",
     ],
   },
@@ -1509,71 +1575,73 @@ export const kapitler: Kapittel[] = [
     kilde: "Tenk! kap. 22",
     forelesning: [12],
     kjerne:
-      "Moderne demokratier er representative og bygger på maktfordeling og folkesuverenitet. Demokrati kan begrunnes ved at det har egenverdi, eller instrumentelt (bedre beslutninger, stabilitet). Ekspertstyre (epistokrati) kan gi bedre beslutninger på komplekse felt, men møter kvalitetsinnvendinger og demokratiske innvendinger.",
+      "Noen vil gi eksperter mer makt (klima, finanskrisen, korona), mens populister angriper «såkalte eksperter». Moderne demokratier er representative og bygger på maktfordeling. Demokrati kan begrunnes ved egenverdi eller instrumentelt (stabilitet, bedre beslutninger). Landemore forsvarer demokratiet epistemisk; Brennan vil erstatte det med epistokrati. Innvendingene mot ekspertstyre er epistemiske og demokratiske, men de er ikke argumenter for å fjerne ekspertene. Vi bør organisere ekspertorganer slik at fordelene blir størst og ulempene minst.",
     begreper: [
-      ["Direkte demokrati", "Borgerne deltar selv i beslutningene."],
-      ["Indirekte/representativt demokrati", "Borgerne velger representanter som beslutter på deres vegne."],
+      ["Direkte demokrati", "Borgerne deltar selv i beslutningene (Aten, folkeavstemninger)."],
+      ["Indirekte/representativt demokrati", "Borgerne velger representanter som beslutter på deres vegne. Det vanlige i dag."],
       [
         "Maktfordelingsprinsippet",
-        "Lovgivende, utøvende og dømmende makt skal ligge hos ulike organer som begrenser hverandre (Montesquieu). Hindrer maktmisbruk.",
+        "Lovgivende, utøvende og dømmende makt skal ligge hos ulike organer. Montesquieu (og USA): makt skal begrense makt i en balanse. Rousseau og Kant: asymmetrisk, der de utøvende organene er underordnet lovgiveren, som i parlamentarismen.",
       ],
       [
         "Folkesuverenitetsprinsippet",
-        "All legitim statsmakt må kunne føres tilbake til folket (Rousseau, Kant).",
+        "All legitim maktutøvelse skal utgå fra folket, som direkte eller gjennom representanter gir lovene (Rousseau, Kant). De kalte idealet «republikk», fordi antikt demokrati var et skiftende flertalls vilkårlige styre.",
       ],
       [
         "Parlamentarisme",
-        "Regjeringen må ha parlamentets tillit. Negativ: sitter til et flertall uttrykker mistillit. Positiv: må aktivt godkjennes av et flertall.",
+        "Regjeringen må ha parlamentets tillit. Negativ (Norge): sitter til den felles ved mistillit. Positiv: må godkjennes ved et innsettingsvedtak.",
+      ],
+      ["Valgdemokrati (aggregativt)", "Beslutninger summerer individuelle preferanser gjennom stemmegivning og flertall."],
+      [
+        "Deliberativt demokrati (Habermas)",
+        "Beslutninger er bare legitime hvis alle berørte har hatt frie og like muligheter til å delta i argumenterende meningsbrytning først. «Kraften i det bedre argument». Flertallsvedtak er aldri endelige.",
       ],
       [
-        "Valgdemokrati (aggregativt)",
-        "Legitimitet gjennom å telle stemmer og summere preferanser.",
-      ],
-      [
-        "Deliberativt demokrati / diskusjonsdemokrati",
-        "Legitimitet gjennom fri, offentlig og begrunnet diskusjon (Habermas).",
+        "Ekspert (Goldman)",
+        "En som har avansert og holdbar kunnskap på et område, mer enn de fleste, og kan bruke den på nye problemer. Ekspert på noe, ikke på alt. Tekniske eksperter kan mye om midler, men ikke nødvendigvis om mål.",
       ],
       ["Epistokrati/teknokrati", "Styre ved dem som har kunnskap (ekspertstyre)."],
       [
         "Avpolitisering",
-        "At verdispørsmål gjøres om til tekniske spørsmål og tas ut av den demokratiske debatten.",
+        "At genuin politisk uenighet om interesser, verdier og mål gjøres om til tekniske spørsmål som overlates til eksperter.",
       ],
     ],
     teorier: [
       {
-        navn: "Landemores tre argumenter for demokrati (epistemiske)",
+        navn: "Landemores tre epistemiske argumenter for demokrati",
         tekst:
-          "1) Juryteoremet: hvis hver velger har over 50 % sjanse for å ha rett, øker sjansen for at flertallet har rett jo flere som deltar. 2) Deliberasjon: mange deltakere gir flere perspektiver og argumenter (kognitivt mangfold). 3) Empiriske erfaringer med demokratier.",
+          "1) Condorcets juryteorem: hvis hver har over 50 % sjanse for å ha rett, øker sjansen for at flertallet har rett jo flere som deltar. 2) Inkluderende deliberasjon gir flere argumenter og perspektiver og slår ekspertdiskusjoner. 3) Empiri: Islands borgerskrevne grunnlov (2012) og det franske borgerkonventet om klima (2019) ga bedre forslag enn eksperter. Kritikk: Urbinati mener demokratiet må begrunnes i egenverdien, retten til selvstyre.",
       },
       {
         navn: "Brennans forsvar for epistokrati",
         tekst:
-          "Mange velgere er dårlig informerte; dårlige beslutninger skader alle. Derfor kan det være rettferdig å gi mer makt til de som vet mest.",
+          "Forslag: kompetansetest for stemmerett, ekstra vekt på stemmene til de kunnskapsrike, eller et epistokratisk råd med veto. Argumenter: vi ville ikke godta en uvitende jury eller stemmerett for barn; juryteoremet slår motsatt vei hvis folk oftere tar feil enn har rett; uvitende deltakere hever ikke kvaliteten på deliberasjonen; mange velgere kan lite om politikk; eksperter vet mer.",
       },
       {
         navn: "Innvendinger mot ekspertstyre",
         tekst: "",
         mot: [
-          "Kvalitetsinnvending: eksperter tar også feil, har bias og egne interesser.",
-          "Demokratisk innvending: eksperter uttaler seg om mål, ikke bare midler; skillet mellom fakta og verdier er uklart. Uten folkelig forankring mangler beslutninger legitimitet.",
-          "Avpolitisering: verdispørsmål gjøres til tekniske spørsmål.",
+          "Epistemiske: ikke-eksperter kan ikke skille gode fra dårlige eksperter. Eksperter gjør logiske feil (Kahneman) og er for skråsikre i spådommer (Tetlock). De har faglige, sosiale og ideologiske skjevheter, og egne interesser.",
+          "Demokratiske: makt flyttes til ikke-valgte. Borgere blir fremmedgjort fordi de ikke ser seg som forfattere av lovene (Christiano). Noen eksperter viser manglende respekt for vanlige borgere. Avpolitisering.",
+          "Eksperter uttaler seg ofte om mål, ikke bare midler (skolestenging under korona), og det er vanskelig å skille fakta fra verdier.",
         ],
       },
       {
         navn: "Bedre eksperter og demokratisk ansvar",
         tekst:
-          "Negative mekanismer (kontroll): ansvarliggjøring, habilitetsregler. Positive mekanismer (forbedring): åpenhet, selvbegrensning (holde seg til eget fagfelt), epistemisk pluralisme (flere fag og perspektiver).",
+          "Innvendingene er ikke grunner til å fjerne ekspertene, men til å organisere dem bedre. Negative mekanismer: sanksjoner mot dårlig arbeid og regler mot bindinger og egeninteresser. Positive mekanismer: normer for sannhetssøken, epistemisk tilbakeholdenhet (vær tydelig på grensene for egen ekspertise), epistemisk pluralisme (flere fag) og at argumentene prøves i ulike fora (fagfeller, parlament, offentlighet).",
       },
     ],
     eksamen: [
-      "Forklar forskjellen på direkte og indirekte demokrati.",
+      "Forklar forskjellen på direkte og indirekte demokrati, og på valgdemokrati og deliberativt demokrati.",
       "Hva er maktfordelingsprinsippet og folkesuverenitetsprinsippet?",
-      "Gjør rede for juryteoremet.",
+      "Hvordan kan demokrati begrunnes? Skill mellom egenverdi og instrumentelle begrunnelser.",
+      "Gjør rede for juryteoremet og hvordan Landemore og Brennan bruker det.",
       "Hva er epistokrati? Gi argumenter for og mot.",
       "Hvordan kan ekspertenes rolle forenes med demokratiet?",
     ],
     case:
-      "Typisk case: «Bør eksperter bestemme klimapolitikken / GMO / pandemitiltak?» Presenter argumenter for epistokrati, motargumentene (kvalitet, demokratisk legitimitet, fakta/verdi-skillet), og løsningen med ansvarlige eksperter innenfor demokratiet.",
+      "Typisk case: «Bør eksperter bestemme klimapolitikken / pandemitiltak / renten?» 1) Hvilke spørsmål gjelder midler og hvilke mål? 2) Argumenter for mer ekspertmakt (Brennan). 3) Epistemiske og demokratiske innvendinger. 4) Landemores alternativ (borgerkonvent). 5) Konkluder med mekanismer for ansvarlige eksperter innenfor demokratiet.",
   },
 
   // ───────────── DEL 6: TILLEGGSTEKSTER ─────────────
