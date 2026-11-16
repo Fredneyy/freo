@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { kapitler } from "@/content/exph0600/kapitler";
 import Nedtelling from "./Nedtelling";
+import SvakeOmrader from "./SvakeOmrader";
+
+const titler = Object.fromEntries(kapitler.map((k) => [k.slug, k.tittel]));
 
 export const metadata: Metadata = { title: "EXPH0600 Ex.phil." };
 
@@ -15,7 +19,7 @@ const seksjoner = [
     tittel: "Eksamensguide",
     tekst: "Slik svarer du på kortsvar og caseoppgaven, tidsbruk og leseplan.",
   },
-  { tittel: "Quiz", tekst: "Flervalgsspørsmål per del og kapittel." },
+  { href: "/exph0600/quiz", tittel: "Quiz", tekst: "Flervalgsspørsmål per del og kapittel." },
   { tittel: "Kortsvar og case", tekst: "Øv med modellsvar og prøveeksamen." },
 ];
 
@@ -54,6 +58,8 @@ export default function Exph0600() {
           ),
         )}
       </section>
+
+      <SvakeOmrader titler={titler} />
 
       <section className="space-y-4">
         <h2 className="text-xl font-semibold">Eksamen</h2>
