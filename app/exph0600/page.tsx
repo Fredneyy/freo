@@ -20,7 +20,9 @@ const seksjoner = [
     tekst: "Slik svarer du på kortsvar og caseoppgaven, tidsbruk og leseplan.",
   },
   { href: "/exph0600/quiz", tittel: "Quiz", tekst: "Flervalgsspørsmål per del og kapittel." },
-  { tittel: "Kortsvar og case", tekst: "Øv med modellsvar og prøveeksamen." },
+  { href: "/exph0600/kortsvar", tittel: "Kortsvar", tekst: "Skriv svar og sammenlign med modellsvar og sjekkliste." },
+  { href: "/exph0600/case", tittel: "Caseoppgaver", tekst: "Seks caser med løsningsskisse etter guidens fem steg." },
+  { href: "/exph0600/proveeksamen", tittel: "Prøveeksamen", tekst: "Fire kortsvar og én av to caser på fire timer." },
 ];
 
 export default function Exph0600() {

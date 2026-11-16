@@ -102,7 +102,7 @@ Arbeidsmåte: trekk ut tekst med `pdftotext` per kapittel, kryssjekk mot foreles
 
 Tilpasses studiespørsmålene og caseoppgavene fra Canvas når de er lagt inn (fase 0).
 
-## Fase 4 – Øvingsplattform
+## Fase 4 – Øvingsplattform ✅
 
 ### 4a Flervalgsquiz
 - Spørsmålsformat: `{ id, kapittel, spørsmål, alternativer[], riktig, forklaring }`.
