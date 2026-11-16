@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { finnKapittel } from "@/content/exph0600/kapitler";
+import Leseplan, { type Plan } from "./Leseplan";
 
 export const metadata: Metadata = { title: "Eksamensguide · EXPH0600" };
 
@@ -78,56 +79,120 @@ const tid: [string, number, string][] = [
   ["Les over og rett", 20, "Sjekk at konklusjonen svarer på oppgaven, og at hvert kortsvar har et eksempel."],
 ];
 
-const leseplan: { uke: string; dager: [string, string[] | string][] }[] = [
-  {
-    uke: "Uke 47: argumentasjon og vitenskap",
-    dager: [
-      ["Man 16.11", ["1", "2"]],
-      ["Tir 17.11", ["3"]],
-      ["Ons 18.11", ["4", "5"]],
-      ["Tor 19.11", ["6", "7"]],
-      ["Fre 20.11", ["8", "9"]],
-      ["Lør 21.11", ["10"]],
-      ["Søn 22.11", "Buffer. Svar skriftlig på eksamensspørsmålene i kap. 1–10 uten å se i notatene."],
-    ],
-  },
-  {
-    uke: "Uke 48: menneske, teknologi og etikk",
-    dager: [
-      ["Man 23.11", ["11"]],
-      ["Tir 24.11", ["12"]],
-      ["Ons 25.11", ["13", "datamaskiner"]],
-      ["Tor 26.11", ["14", "15"]],
-      ["Fre 27.11", ["16"]],
-      ["Lør 28.11", ["17"]],
-      ["Søn 29.11", ["18"]],
-    ],
-  },
-  {
-    uke: "Uke 49: politikk, tilleggstekster og case",
-    dager: [
-      ["Man 30.11", ["19", "20"]],
-      ["Tir 1.12", ["21", "22"]],
-      ["Ons 2.12", ["ingenioransvar", "miljoetikk"]],
-      ["Tor 3.12", ["baerekraft", "fjelland"]],
-      ["Fre 4.12", "Skriv datasenter-casen nedenfor på 2,5 timer."],
-      ["Lør 5.12", "Kortsvar-runde: ett spørsmål fra hver del, 15 min hver."],
-      ["Søn 6.12", "Buffer. Ta igjen det du ligger etter med."],
-    ],
-  },
-  {
-    uke: "Siste dager",
-    dager: [
-      ["Man 7.12", "Prøveeksamen: fire kortsvar og én case, fire timer, uten hjelpemidler."],
-      ["Tir 8.12", "Lett repetisjon av begrepene. Ikke nytt stoff. Legg deg tidlig."],
-      ["Ons 9.12", "Eksamen kl. 09–13."],
-    ],
-  },
-];
-
 const h2 = "text-xl font-semibold";
 const boks = "rounded-xl border border-zinc-200 p-5 dark:border-zinc-800";
 const dempet = "text-zinc-600 dark:text-zinc-400";
+
+type Okt = [string[] | string, string?];
+
+const fullPlan: Okt[] = [
+  [["1", "2"]],
+  [["3"]],
+  [["4", "5"]],
+  [["6", "7"]],
+  [["8", "9"]],
+  [["10"]],
+  ["Repetisjon: svar skriftlig på eksamensspørsmålene i kap. 1–10 uten å se i notatene."],
+  [["11"]],
+  [["12"]],
+  [["13", "datamaskiner"]],
+  [["14", "15"]],
+  [["16"]],
+  [["17"]],
+  [["18"]],
+  [["19", "20"]],
+  [["21", "22"]],
+  [["ingenioransvar", "miljoetikk"]],
+  [["baerekraft", "fjelland"]],
+  ["Skriv datasenter-casen nedenfor på 2,5 timer."],
+  ["Kortsvar-runde: ett spørsmål fra hver del, 15 min hver."],
+];
+
+const kortPlan: Okt[] = [
+  [["1", "2", "3"], "argumentasjon trengs i alle oppgaver"],
+  [["15", "16"], "etikkteoriene er grunnmuren i casen"],
+  [["17", "18"]],
+  [["14", "ingenioransvar"]],
+  [["miljoetikk", "baerekraft", "fjelland"]],
+  [["4", "5", "6"]],
+  [["7", "8", "9"]],
+  [["19", "20", "21", "22"]],
+  [["10", "11", "12", "13", "datamaskiner"], "les sammendrag og figurer, og ta quizen"],
+  ["Skriv én case på 2,5 timer, og ta en kortsvar-runde."],
+];
+
+const krisePlan: Okt[] = [
+  [["15", "16", "17", "18"], "etikkteoriene: case teller 2/3"],
+  [["1", "2", "3"], "ta quizen for del 1 etterpå"],
+  [["ingenioransvar", "miljoetikk", "baerekraft", "14"], "typiske case-temaer"],
+  ["Del 2 (vitenskapsfilosofi): les «Kjernen» og figurene i kap. 4–10, og ta quizen."],
+  ["Del 3 og 5: les «Kjernen» og figurene, og ta quizen. Gå tilbake til kapitlene du bommer mest på."],
+];
+
+function Okter({ okter }: { okter: Okt[] }) {
+  return (
+    <ol className="divide-y divide-zinc-200 rounded-xl border border-zinc-200 text-sm dark:divide-zinc-800 dark:border-zinc-800">
+      {okter.map(([x, merknad], i) => (
+        <li key={i} className="grid grid-cols-[4.5rem_1fr] gap-2 px-4 py-2.5">
+          <span className="font-mono text-zinc-500">Økt {i + 1}</span>
+          <span>
+            {typeof x === "string" ? x : <Kaps s={x} />}
+            {merknad && <span className="text-zinc-500"> · {merknad}</span>}
+          </span>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+const planer: Plan[] = [
+  {
+    id: "full",
+    navn: "Full plan",
+    nar: "3 uker eller mer",
+    minDager: 21,
+    innhold: (
+      <div className="space-y-3">
+        <p className={dempet}>
+          20 økter på 2–3 timer, omtrent én om dagen. Les sammendraget, les kapitlet i Tenk!, og svar på
+          eksamensspørsmålene nederst på kapittelsiden uten å se i teksten.
+        </p>
+        <Okter okter={fullPlan} />
+      </div>
+    ),
+  },
+  {
+    id: "kort",
+    navn: "Komprimert",
+    nar: "1–3 uker",
+    minDager: 7,
+    innhold: (
+      <div className="space-y-3">
+        <p className={dempet}>
+          10 økter. Prioriter etter hva caset krever. Les sammendragene og ta quizen; gå til Tenk! bare der du er
+          usikker. Har du mer enn ti dager, legg inn en repetisjonsøkt etter økt 5.
+        </p>
+        <Okter okter={kortPlan} />
+      </div>
+    ),
+  },
+  {
+    id: "krise",
+    navn: "Siste uke",
+    nar: "under 7 dager",
+    minDager: 0,
+    innhold: (
+      <div className="space-y-3">
+        <p className={dempet}>
+          5 økter, gjerne to om dagen. Bare sammendrag, figurer og quiz, ikke boka. Har du bare 1–2 dager: ta økt 1 og
+          2, og skriv én case.
+        </p>
+        <Okter okter={krisePlan} />
+      </div>
+    ),
+  },
+];
+
 
 export default function Guide() {
   return (
@@ -351,24 +416,30 @@ export default function Guide() {
       </section>
 
       <section id="leseplan" className="scroll-mt-6 space-y-5">
-        <h2 className={h2}>Leseplan frem til 9. desember</h2>
+        <h2 className={h2}>Leseplan</h2>
         <p className={dempet}>
-          Ett til to kapitler om dagen. Les sammendraget, les kapitlet i Tenk!, og svar på eksamensspørsmålene nederst på
-          kapittelsiden uten å se i teksten.
+          Planene er delt i økter, ikke datoer. Start på økt 1 samme dag som du begynner, og ta øktene i rekkefølge. Ligger du
+          etter, slå sammen to økter eller bytt til en kortere plan, i stedet for å gi opp.
         </p>
-        {leseplan.map((u) => (
-          <div key={u.uke} className="space-y-2">
-            <h3 className="font-semibold">{u.uke}</h3>
-            <ul className="divide-y divide-zinc-200 rounded-xl border border-zinc-200 text-sm dark:divide-zinc-800 dark:border-zinc-800">
-              {u.dager.map(([d, x]) => (
-                <li key={d} className="grid grid-cols-[5.5rem_1fr] gap-2 px-4 py-2.5">
-                  <span className="font-mono text-zinc-500">{d}</span>
-                  <span>{typeof x === "string" ? x : <Kaps s={x} />}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <Leseplan planer={planer} />
+        <div className={boks}>
+          <h3 className="font-semibold">Uansett hvilken plan du følger</h3>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+            <li>
+              <strong>2 dager før eksamen</strong> (mandag 7.12): ta en{" "}
+              <Link href="/exph0600/proveeksamen" className="underline">
+                prøveeksamen
+              </Link>{" "}
+              på fire timer, uten hjelpemidler.
+            </li>
+            <li>
+              <strong>Dagen før</strong> (tirsdag 8.12): lett repetisjon av begrepene. Ikke nytt stoff. Legg deg tidlig.
+            </li>
+            <li>
+              Bruk <Link href="/exph0600" className="underline">svake områder</Link> fra quizen til å velge hva du repeterer.
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   );
