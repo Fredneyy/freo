@@ -22,6 +22,8 @@ Svar brukeren på norsk. Commit etter hver fase uten å spørre (ikke push). Les
 - **Eksamensformen styrer alt.** Øvingsformatene i fase 4 velges ut fra hvordan eksamen er (se tabellen nedenfor). Ikke kopier kortsvar og case blindt.
 - **Studiespørsmål fra foreleser er gull.** Let etter dem i slidene og bruk dem i øvingene.
 - **Si fra om det som mangler.** Noter manglende tilleggstekster og spør brukeren én gang. Sier brukeren at de ikke har tilgang, går du videre med slides og merker innholdet.
+- **Pensum skal ikke være tørr tekst.** Bruk figurer der en struktur, prosess eller sammenligning blir klarere visuelt (fase 2b). Skriv steg og oppramsinger som «1) … 2) …», så vises de som en liste.
+- **Planer skal ikke kreve at brukeren starter på en bestemt dato.** Leseplanen deles i økter og har varianter etter hvor mye tid som er igjen (fase 3).
 
 ## Fase 0 – Innhenting og inventar
 
@@ -58,10 +60,21 @@ Kopier strukturen fra EXPH0600. Ikke lag delte komponenter før det finnes et tr
 - Legg emnet til i `emner` i `app/page.tsx` (kode, navn, «Eksamen <dato>»).
 - Kopier og tilpass disse til `app/<kode>/`:
   - `page.tsx` med seksjonskort og eksamensboks
-  - `Nedtelling.tsx` (endre `EKSAMEN`)
-  - `pensum/page.tsx` og `pensum/[kap]/page.tsx`
+  - `Nedtelling.tsx` og `guide/Leseplan.tsx` (endre `EKSAMEN` begge steder)
+  - `pensum/page.tsx` og `pensum/[kap]/page.tsx` (inkludert `Avsnitt` og `diagrammer.tsx`)
+- `app/not-found.tsx` (norsk 404) finnes allerede og gjelder alle emner.
 - **Alle localStorage-nøkler skal ha emnet som navnerom**, for eksempel `freo:<kode>:quiz`. Gjelder også `freo:<kode>:svar:` og `freo:<kode>:proveeksamen`, samt event-navn.
 - Seksjoner som ikke er laget ennå, vises som «kommer». De får `href` når de er ferdige.
+
+**UI-konvensjoner:**
+- **Ikoner:** bruk `lucide-react`, aldri ASCII-piler.
+  - Tilbakelenker: `ChevronLeft`.
+  - Forrige og neste: `ChevronLeft` og `ChevronRight`.
+  - `<details>`: `ChevronRight` med `group-open:rotate-90`.
+  - Figurer: `ArrowDown`, `ArrowRight` osv.
+  - Gi alltid ikonene `aria-hidden`.
+- **Avrundede beholdere:** gi `<details>`, `<ul>` og lignende med `rounded-*` og rader med `hover:bg-*` klassen `overflow-hidden`. Ellers går hover-bakgrunnen utenfor hjørnene.
+- **Mørk modus:** alle farger skal ha en `dark:`-variant.
 
 ## Fase 2 – Konsolidert pensum (`content/<kode>/kapitler.ts`)
 
@@ -75,6 +88,35 @@ Kopier strukturen fra EXPH0600. Ikke lag delte komponenter før det finnes et tr
 - **Arbeid del for del.** Les hele kapitlet, sammenlign med forelesningen og skriv sammendraget. Fortsett først når delen er kontrollert. Commit per del eller i biter som henger sammen.
 - Kontroller med `grep`/Python mot kildeteksten: navn, årstall, eksempler, tall og sitater.
 - For lange norske regex-mønstre: bruk `python3 -I` med `re`, ikke ugrep. Ugrep feiler med «exceeds complexity limits».
+- **Prosedyrer og oppramsinger** skrives inline som «Intro: 1) … 2) … 3) …».
+  - `Avsnitt` i `pensum/[kap]/page.tsx` gjør dem om til en nummerert liste på egne linjer.
+  - Det skjer bare når tallene kommer i rekkefølge fra 1. Henvisninger som «s. 42)» påvirkes derfor ikke.
+  - `Avsnitt` brukes for `kjerne`, begrepsforklaringer, `teorier[].tekst` og `case`.
+
+## Fase 2b – Figurer (`app/<kode>/pensum/[kap]/diagrammer.tsx`)
+
+- `diagrammer: Record<slug, { tittel, tekst?, figur }[]>`. Figurene vises under «Kjernen».
+- **Lag figurer i HTML/CSS med Tailwind, ikke i SVG eller som bilder.** Da brytes teksten på mobil, og mørk modus fungerer.
+- Gjenbruk byggeklossene i EXPH0600-filen:
+  - `B`: boks med varianter. `n` er nøytral, `a` aksent (standpunkt/overskrift), `s` stiplet (implisitt/valgfri), `g` grønn (gyldig/ja) og `r` rød (innvending/ugyldig).
+  - `S`: undertekst.
+  - Piler: `Ned`, `Opp` og `Hoyre`.
+  - `Kol` og `Etikett`.
+- **Figurtyper som fungerer:**
+
+  | Når | Figur |
+  |---|---|
+  | Klassifisering | Tre med kolonner |
+  | Metode og prosess | Loddrett flyt med forgrening |
+  | To begreper som krysses | 2×2-rutenett |
+  | Sannsynlighet | Frekvenstre |
+  | Moralsk status / omfang | Sirkler i hverandre |
+  | Vurdering | Beslutningstre |
+  | To modeller | Flyter side om side |
+
+- Bruk sykluser og lange kjeder som **loddrett** flyt. Horisontale kjeder med piler brytes på tilfeldige steder.
+- **Innholdet i figurene skal komme fra kontrollert innhold** i `kapitler.ts` eller kilden. Bruk kildens egne eksempler. En figur er like mye fasit som teksten.
+- Prioriter kapitler med struktur. Hopp over kapitler der en figur ikke sier mer enn teksten. 15–20 figurer for et emne på ca. 25 kapitler er passe.
 
 ## Fase 3 – Eksamensguide (`app/<kode>/guide/page.tsx`)
 
@@ -85,7 +127,16 @@ Kopier strukturen fra EXPH0600. Ikke lag delte komponenter før det finnes et tr
 - **Tabell over oppgaveverb:** gjør rede for, drøft, sammenlign osv.
 - **Svakt og godt svar** side om side, pluss vanlige feil.
 - **Tidsfordeling** etter eksamenslengde og vekting.
-- **Leseplan fra i dag til eksamensdagen**, med prøveeksamen 2–3 dager før.
+- **Fleksibel leseplan** (`guide/Leseplan.tsx`):
+  - Planen deles i **økter, ikke datoer**. Brukeren starter på økt 1 samme dag som de begynner.
+  - Ha tre varianter med `minDager`:
+    - **Full** (3+ uker): alt pensum, kilden og repetisjon.
+    - **Komprimert** (1–3 uker): ca. 10 økter, sammendrag og quiz, kilden bare ved behov.
+    - **Siste uke** (under 7 dager): ca. 5 økter med det som teller mest.
+  - Prioriter etter vektingen på eksamen. I EXPH0600 kom etikkteoriene og del 6 først, fordi caset teller 2/3.
+  - Komponenten velger varianten som passer dagene som er igjen, og merker den «anbefalt for deg». Brukeren kan bytte.
+  - **Faste punkter knyttes til eksamensdatoen**, ikke til starten: prøveeksamen 2 dager før, og lett repetisjon dagen før.
+  - Si hva brukeren skal gjøre ved etterslep: slå sammen økter eller bytt til en kortere plan.
 - **Ankere** (`id=`) for seksjonene, siden øvingssidene lenker dit.
 - Skriv på siden at rådene er våre egne anbefalinger, ikke offisielle krav.
 
@@ -137,10 +188,11 @@ Velg format etter eksamensformen:
 3. **404:**
    - En ukjent slug skal gi status 404.
    - Med `cacheComponents` er `dynamicParams` ikke tillatt. Vent derfor på `params` utenfor `<Suspense>`, kall `notFound()`, og sett `export const instant = false`. Se `app/exph0600/pensum/[kap]/page.tsx`.
-4. **Mobil.** Last hver side i en iframe på 375 px via `javascript_tool`. Kontroller at:
-   - `scrollWidth` er 375
+4. **Mobil.** Last hver side i en iframe på 375 px via `javascript_tool`. Ta med alle kapitler som har figurer, og klikk gjennom alle variantene av leseplanen. Kontroller at:
+   - `scrollWidth` er 375. Figurer med mange kolonner er den vanligste årsaken når den ikke er det; stable dem med `sm:grid-cols-*`.
    - ingen `input`, `select` eller `textarea` har skrift under 16 px, ellers zoomer iOS inn
-   - skjermbildet ser riktig ut
+   - skjermbildet ser riktig ut. Vis flere iframes side om side, skalert, for å se mange figurer i ett skjermbilde.
+   - figurene er riktige i bred visning også
 5. **Chrome-test av flytene:**
    - Gå gjennom quiz, kortsvar og prøveeksamen: start, skriv, last siden på nytt og lever.
    - Se etter feil i konsollen og innsikter fra Next sitt dev-verktøy.
