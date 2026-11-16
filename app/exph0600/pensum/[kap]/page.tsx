@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { deler, finnKapittel, kapitler } from "@/content/exph0600/kapitler";
+
+// Alle kapitler er forhåndsrendret. params avventes utenfor Suspense slik at ukjente slugs gir ekte 404-status.
+export const instant = false;
 
 export function generateStaticParams() {
   return kapitler.map((k) => ({ kap: k.slug }));
@@ -13,15 +15,7 @@ export async function generateMetadata({ params }: PageProps<"/exph0600/pensum/[
   return { title: k ? `${k.tittel} · EXPH0600` : "Fant ikke kapittel" };
 }
 
-export default function KapittelSide({ params }: PageProps<"/exph0600/pensum/[kap]">) {
-  return (
-    <Suspense fallback={null}>
-      <Kapittel params={params} />
-    </Suspense>
-  );
-}
-
-async function Kapittel({ params }: { params: Promise<{ kap: string }> }) {
+export default async function KapittelSide({ params }: PageProps<"/exph0600/pensum/[kap]">) {
   const { kap } = await params;
   const k = finnKapittel(kap);
   if (!k) notFound();

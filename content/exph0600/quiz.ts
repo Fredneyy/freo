@@ -161,7 +161,7 @@ export const quiz: QuizSporsmal[] = [
       "Det er et analogiargument med for få likheter",
     ],
     forklaring:
-      "Ved induktiv generalisering er størrelse og representativitet kriteriene, og representativitet er viktigst. 2000 er mye, men studenter i Oslo er ikke som befolkningen ellers.",
+      "Ved induktiv generalisering er størrelse og representativitet kriteriene. 2000 er mye, men studenter i Oslo er ikke som befolkningen ellers.",
   },
   {
     id: "3-abduksjon",
@@ -217,9 +217,9 @@ export const quiz: QuizSporsmal[] = [
   {
     id: "4-type1",
     kapittel: "4",
-    sporsmal: "En studie konkluderer med at et medikament virker, men det har egentlig ingen effekt. Hva slags feil er dette?",
-    alternativer: ["Type I-feil (falsk positiv)", "Type II-feil (falsk negativ)", "Bekreftelsestendens", "Publikasjonsbias"],
-    forklaring: "Type I: vi tror det finnes en effekt som ikke finnes. Type II: vi overser en effekt som finnes.",
+    sporsmal: "Et legemiddel testes for skadevirkninger. Forskerne konkluderer med at det er ufarlig, men det er faktisk farlig. Hva kaller Tenk! denne feilen?",
+    alternativer: ["Type I-feil", "Type II-feil", "Bekreftelsestendens", "Publikasjonsbias"],
+    forklaring: "I bokas eksempel er type I å tro at legemidlet er ufarlig når det er farlig, og type II å tro at det er farlig når det er ufarlig. Type I er ofte viktigere å unngå, og forsøkene bør designes deretter.",
   },
   {
     id: "5-replikerbar",
@@ -714,9 +714,9 @@ export const quiz: QuizSporsmal[] = [
   {
     id: "19-negativ",
     kapittel: "19",
-    sporsmal: "Hva er forskjellen på negativ og positiv frihet (Berlin)?",
+    sporsmal: "Hva er forskjellen på negativ og positiv frihet?",
     alternativer: [
-      "Negativ frihet er frihet fra ytre hindringer; positiv frihet er evnen til selv å realisere egne mål",
+      "Negativ frihet er frihet fra ytre hindringer; positiv frihet er de aktørinterne evnene som gjør at vi kan utøve selvbestemmelse",
       "Negativ frihet er dårlig, positiv frihet er god",
       "Negativ frihet gjelder staten, positiv frihet gjelder individet",
       "Negativ frihet er ikke-dominans, positiv frihet er ikke-innblanding",
@@ -800,7 +800,7 @@ export const quiz: QuizSporsmal[] = [
       "At eksperter har godkjent den",
       "At den maksimerer samlet nytte",
     ],
-    forklaring: "«Kraften i det bedre argument» skal avgjøre. Valgdemokratiet summerer derimot bare preferanser.",
+    forklaring: "«Kraften i de bedre argumenter» skal avgjøre. Valgdemokratiet summerer derimot bare preferanser.",
   },
   {
     id: "22-avpolitisering",

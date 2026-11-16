@@ -121,7 +121,7 @@ Tilpasses studiespørsmålene og caseoppgavene fra Canvas når de er lagt inn (f
 
 **Ferdig når:** man kan ta en full prøveeksamen (4 kortsvar + 1 case) på siden.
 
-## Fase 5 – Kvalitetssikring og publisering
+## Fase 5 – Kvalitetssikring og publisering (kvalitetssikring ✅, publisering gjenstår)
 
 - Faglig gjennomgang: hvert sammendrag og hvert quizsvar kryssjekkes mot boka (feil i fasit er verre enn manglende innhold).
 - `npm run build` + `npm run lint` grønt.

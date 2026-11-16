@@ -261,7 +261,7 @@ export const kortsvar: Kortsvar[] = [
     kapittel: "20",
     sporsmal: "Forklar forskjellen på frihet som ikke-innblanding og frihet som ikke-dominans.",
     modellsvar:
-      "Begge er former for negativ frihet. Frihet som ikke-innblanding (Mill) betyr fravær av hindringer påført av andre, som tvang og trusler. Frihet som ikke-dominans (Kant, Wollstonecraft) betyr at ingen er i posisjon til å utøve vilkårlig makt over oss. Forskjellen vises med slaven som har en snill herre: ingen blander seg inn i hva hun gjør, så etter det første synet er hun fri. Etter det andre er hun ufri, fordi herren når som helst kan bestemme over henne. Ikke-dominans forklarer også hvordan lover kan begrense oss og likevel gjøre oss frie: de beskytter oss mot vilkårlig makt. Positiv frihet er noe annet: evnen til selv å realisere egne mål, eller å delta i lovgivningen.",
+      "Begge er former for negativ frihet. Frihet som ikke-innblanding (Mill) betyr fravær av hindringer påført av andre, som tvang og trusler. Frihet som ikke-dominans (Kant, Wollstonecraft) betyr at ingen er i posisjon til å utøve vilkårlig makt over oss. Forskjellen vises med slaven som har en snill herre: ingen blander seg inn i hva hun gjør, så etter det første synet er hun fri. Etter det andre er hun ufri, fordi herren når som helst kan bestemme over henne. Ikke-dominans forklarer også hvordan lover kan begrense oss og likevel gjøre oss frie: de beskytter oss mot vilkårlig makt. Positiv frihet er noe annet: de aktørinterne faktorene som gjør oss i stand til å utøve selvbestemmelse.",
     sjekkliste: [
       "Ikke-innblanding (Mill)",
       "Ikke-dominans (Kant/Wollstonecraft)",
@@ -275,11 +275,11 @@ export const kortsvar: Kortsvar[] = [
     kapittel: "22",
     sporsmal: "Sammenlign valgdemokrati og deliberativt demokrati.",
     modellsvar:
-      "I valgdemokratiet (aggregativt demokrati) blir beslutninger tatt ved å summere individuelle preferanser gjennom stemmegivning, og flertallet avgjør. I det deliberative demokratiet (Habermas) er beslutninger bare legitime hvis alle berørte har hatt frie og like muligheter til å delta i en argumenterende meningsbrytning først. Det er «kraften i det bedre argument» som skal avgjøre, og flertallsvedtak er aldri endelige. Valgdemokratiet tar preferansene som gitte, mens det deliberative mener at preferansene kan og bør endres gjennom offentlig debatt. Det kobler demokratiteorien til debattnormene i kapittel 1. Et problem for det deliberative idealet er at det er krevende i praksis, og at ikke alle har like gode forutsetninger for å delta.",
+      "I valgdemokratiet (aggregativt demokrati) blir beslutninger tatt ved å summere individuelle preferanser gjennom stemmegivning, og flertallet avgjør. I det deliberative demokratiet (Habermas) er beslutninger bare legitime hvis alle berørte har hatt frie og like muligheter til å delta i en argumenterende meningsbrytning først. Det er «kraften i de bedre argumenter» som skal avgjøre, og flertallsvedtak er aldri endelige. Valgdemokratiet tar preferansene som gitte, mens det deliberative mener at preferansene kan og bør endres gjennom offentlig debatt. Det kobler demokratiteorien til debattnormene i kapittel 1. Et problem for det deliberative idealet er at det er krevende i praksis, og at ikke alle har like gode forutsetninger for å delta.",
     sjekkliste: [
       "Valgdemokrati: summerer preferanser, flertall",
       "Deliberativt: fri og lik deltakelse i argumentasjon (Habermas)",
-      "«Kraften i det bedre argument»",
+      "«Kraften i de bedre argumenter»",
       "Forskjell: gitte vs. endrede preferanser",
       "Sammenligning eller kritikk",
     ],

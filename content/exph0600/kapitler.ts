@@ -211,7 +211,7 @@ export const kapitler: Kapittel[] = [
       ["Induksjon", "Argumentet skal sannsynliggjøre standpunktet. Relevans kommer i grader."],
       [
         "Induktiv generalisering",
-        "Fra et utvalg til en generell påstand («n % av observerte F er G, altså er alle/de fleste F G»). Kriterier: utvalgets størrelse og representativitet (viktigst).",
+        "Fra et utvalg til en generell påstand («n % av observerte F er G, altså er alle/de fleste F G»). Kriterier: utvalgets størrelse og representativitet.",
       ],
       [
         "Induktiv syllogisme",
@@ -301,7 +301,7 @@ export const kapitler: Kapittel[] = [
       ],
       [
         "Type I- og type II-feil",
-        "Type I: falsk positiv (vi tror det er en effekt som ikke finnes). Type II: falsk negativ (vi overser en reell effekt).",
+        "Bokas eksempel (legemiddel testet for skadevirkninger): Type I: å tro at legemidlet er ufarlig når det faktisk er farlig. Type II: å tro at det er farlig når det faktisk er ufarlig. Poenget: noen feil er viktigere å unngå enn andre, og forsøk (og vår kognisjon) bør innrettes etter det.",
       ],
       [
         "Ockhams barberkniv",
@@ -1470,9 +1470,9 @@ export const kapitler: Kapittel[] = [
       ],
       [
         "Negativ frihet",
-        "Frihet fra: fravær av ytre hindringer/innblanding (Berlin). Eller fravær av dominans (kap. 20).",
+        "Frihet fra: fravær av ytre hindringer/innblanding. Eller fravær av dominans (kap. 20).",
       ],
-      ["Positiv frihet", "Frihet til: evnen til selv å realisere egne mål og verdier."],
+      ["Positiv frihet", "Frihet til: de aktørinterne faktorene (f.eks. kunnskap, selvrefleksjon) som gjør det mulig å handle fritt og utøve selvbestemmelse. Eks.: skoleplikt fremmer frihet. På kollektivt nivå: innflytelse på lovene vi er underlagt."],
     ],
     teorier: [
       {
@@ -1718,7 +1718,7 @@ export const kapitler: Kapittel[] = [
       ["Valgdemokrati (aggregativt)", "Beslutninger summerer individuelle preferanser gjennom stemmegivning og flertall."],
       [
         "Deliberativt demokrati (Habermas)",
-        "Beslutninger er bare legitime hvis alle berørte har hatt frie og like muligheter til å delta i argumenterende meningsbrytning først. «Kraften i det bedre argument». Flertallsvedtak er aldri endelige.",
+        "Beslutninger er bare legitime hvis alle berørte har hatt frie og like muligheter til å delta i argumenterende meningsbrytning først. «Kraften i de bedre argumenter». Flertallsvedtak er aldri endelige.",
       ],
       [
         "Ekspert (Goldman)",
@@ -1776,7 +1776,7 @@ export const kapitler: Kapittel[] = [
     kilde: "van de Poel & Royakkers (2011): «The Responsibilities of Engineers»",
     forelesning: [5],
     kjerne:
-      "Ingeniører har stor makt og dermed stort ansvar. Teksten skiller mellom passivt (tilbakeskuende) og aktivt (fremoverskuende) ansvar, gir fire betingelser for klanderverdighet, og diskuterer ingeniøridealer og tre modeller for ingeniørers ansvar: separatisme, teknokrati og varsling. Eksempel: Challenger-ulykken (1986), der ingeniøren Boisjoly hadde advart.",
+      "Ingeniører har stor makt og dermed stort ansvar. Teksten skiller mellom passivt (tilbakeskuende) og aktivt (fremoverskuende) ansvar, gir fire betingelser for klanderverdighet, og diskuterer ingeniøridealer og tre modeller for ingeniørers ansvar: separatisme, teknokrati og varsling. Eksempel: Challenger-ulykken (1986), der ingeniøren Boisjoly hadde advart. Merk: sammendraget bygger på forelesningsslidene, ikke på originalteksten.",
     begreper: [
       ["Rolleansvar", "Ansvar knyttet til en rolle (ansatt, ingeniør, forelder). Moralsk ansvar kan trumfe rolleansvar."],
       [
@@ -1832,7 +1832,7 @@ export const kapitler: Kapittel[] = [
     kilde: "Martin & Schinzinger (2010): «Environmental Ethics»",
     forelesning: [5],
     kjerne:
-      "Miljøetikk spør hvilke forpliktelser vi har overfor natur og dyr, og hva som har egenverdi. To metaforer viser forholdet mellom egennytte og fellesskapets nytte: den usynlige hånd og allmenningens tragedie. Teksten kontrasterer «tekno-tenkning» med «grønn filosofi», og skiller mellom antroposentrisme, biosentrisme og økosentrisme.",
+      "Miljøetikk spør hvilke forpliktelser vi har overfor natur og dyr, og hva som har egenverdi. To metaforer viser forholdet mellom egennytte og fellesskapets nytte: den usynlige hånd og allmenningens tragedie. Teksten kontrasterer «tekno-tenkning» med «grønn filosofi», og skiller mellom antroposentrisme, biosentrisme og økosentrisme. Merk: sammendraget bygger på forelesningsslidene, ikke på originalteksten.",
     begreper: [
       [
         "Den usynlige hånd",
@@ -1884,7 +1884,7 @@ export const kapitler: Kapittel[] = [
     kilde: "Carson & Skauge (2020): «Bærekraftige virksomheter»",
     forelesning: [5],
     kjerne:
-      "Bærekraftig utvikling (Brundtland 1987) er utvikling som møter dagens behov uten å ødelegge fremtidige generasjoners mulighet til å møte sine. Bærekraft har tre dimensjoner: miljø, økonomi og sosiale forhold. Spørsmålet er hva som skjer når de kolliderer (svak vs. sterk bærekraft).",
+      "Bærekraftig utvikling (Brundtland 1987) er utvikling som møter dagens behov uten å ødelegge fremtidige generasjoners mulighet til å møte sine. Bærekraft har tre dimensjoner: miljø, økonomi og sosiale forhold. Spørsmålet er hva som skjer når de kolliderer (svak vs. sterk bærekraft). Merk: sammendraget bygger på forelesningsslidene, ikke på originalteksten.",
     begreper: [
       [
         "Bærekraftig utvikling",
